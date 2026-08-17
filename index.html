@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Hossein Amirabedin | Frontend & WordPress Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
+    <nav
+      class="mobile-drawer"
+      id="mobileDrawer"
+      aria-label="منوی ناوبری موبایل"
+      aria-hidden="true"
+    >
+      <div class="drawer__header">
+        <a href="#" class="logo" aria-label="رفتن به صفحه اصلی">
+          <div class="logo__mark"><span>&lt;MH/&gt;</span></div>
+          <div class="logo__text">
+            <span class="logo__brand">امیرعابدین</span>
+            <span class="logo__role">فرانت اند و وردپرس دولوپر</span>
+          </div>
+        </a>
+        <button class="drawer__close" id="drawerClose" aria-label="بستن منو">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer__nav">
+        <a href="#about" class="drawer__link" data-section="about">
+          <span>درباره من</span>
+          <svg viewBox="0 0 24 24" class="drawer__arrow">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+        <a href="#skills" class="drawer__link" data-section="skills">
+          <span>مهارت‌ها</span>
+          <svg viewBox="0 0 24 24" class="drawer__arrow">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+        <a href="#services" class="drawer__link" data-section="services">
+          <span>خدمات</span>
+          <svg viewBox="0 0 24 24" class="drawer__arrow">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+        <a href="#projects" class="drawer__link" data-section="projects">
+          <span>نمونه کارها</span>
+          <svg viewBox="0 0 24 24" class="drawer__arrow">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+        <div class="drawer__divider"></div>
+        <a href="#contact" class="drawer__link" data-section="contact">
+          <span>تماس</span>
+          <svg viewBox="0 0 24 24" class="drawer__arrow">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="drawer__footer">
+        <a href="#contact" class="btn-cta btn-cta--full" id="drawerCTA">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+          بیاید با هم کار کنیم
+        </a>
+      </div>
+    </nav>
+
+    <header class="header" id="siteHeader" role="banner">
+      <div class="header__inner">
+        <a href="#" class="logo" aria-label="رفتن به صفحه اصلی">
+          <div class="logo__mark"><span>&lt;MH/&gt;</span></div>
+          <div class="logo__text">
+            <span class="logo__brand">امیرعابدین</span>
+            <span class="logo__role">فرانت اند و وردپرس دولوپر</span>
+          </div>
+        </a>
+
+        <nav class="header__nav" aria-label="منوی اصلی">
+          <a href="#about" class="nav__link" data-section="about">درباره من</a>
+          <a href="#skills" class="nav__link" data-section="skills">مهارت‌ها</a>
+          <a href="#services" class="nav__link" data-section="services"
+            >خدمات</a
+          >
+          <a href="#projects" class="nav__link" data-section="projects"
+            >نمونه کارها</a
+          >
+          <a href="#contact" class="nav__link" data-section="contact">تماس</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#contact" class="btn-cta" aria-label="تماس با من">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <span class="btn-cta__text">بیاید با هم کار کنیم</span>
+          </a>
+
+          <button
+            class="hamburger"
+            id="hamburgerBtn"
+            aria-label="باز کردن منو"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <span class="hamburger__bar hamburger__bar--top"></span>
+            <span class="hamburger__bar hamburger__bar--mid"></span>
+            <span class="hamburger__bar hamburger__bar--bot"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-spacer"></div>
+
+    <section class="hero" id="hero" aria-label="معرفی">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="eyebrow__dot"></span>
+            <span>آماده همکاری</span>
+          </div>
+
+          <h1 class="hero__title">
+            ما فقط کد نمی‌نویسیم، مشکل شما را حل می‌کنیم.
+          </h1>
+
+          <p class="hero__bio">
+            محمد حسین امیرعابدین — توسعه‌دهنده فرانت‌اند و وردپرس با بیش از ۴
+            سال تجربه در ساخت سایت‌ها و اپلیکیشن‌هایی که نه فقط زیبا، بلکه
+            هدفمند هستند. از صفحه اول تا آخرین خط کد، هر چیزی که می‌سازم باید
+            برای کسب‌وکار شما کار کند.
+          </p>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="stat__number">+۴</span>
+              <span class="stat__label">سال تجربه</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="stat__number">+۶</span>
+              <span class="stat__label">پروژه موفق</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="stat__number">۵</span>
+              <span class="stat__label">تکنولوژی</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projects" class="hero__btn hero__btn--primary">
+              نمونه کارها
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="hero__btn hero__btn--ghost">
+              تماس با من
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__terminal-wrap" aria-label="ترمینال تعاملی">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <div class="terminal__dots">
+                <span
+                  class="terminal__dot terminal__dot--red"
+                  title="بستن"
+                ></span>
+                <span
+                  class="terminal__dot terminal__dot--yellow"
+                  title="کوچک کردن"
+                ></span>
+                <span
+                  class="terminal__dot terminal__dot--green"
+                  title="بزرگ کردن"
+                ></span>
+              </div>
+              <span class="terminal__title">amirabedin@portfolio: ~</span>
+              <div class="terminal__tab-bar">
+                <span class="terminal__tab terminal__tab--active">bash</span>
+              </div>
+            </div>
+
+            <div
+              class="terminal__body"
+              id="terminalBody"
+              role="log"
+              aria-live="polite"
+            >
+              <div class="terminal__boot" id="terminalBoot">
+                <p class="t-line">
+                  <span class="t-comment"
+                    ># محمد حسین امیرعابدین — Portfolio</span
+                  >
+                </p>
+                <p class="t-line">
+                  <span class="t-comment"
+                    ># Frontend Developer | WordPress Specialist</span
+                  >
+                </p>
+                <p class="t-line t-line--gap"></p>
+                <p class="t-line">
+                  <span class="t-key">const</span>
+                  <span class="t-var">developer</span>
+                  <span class="t-op">=</span> {
+                </p>
+                <p class="t-line t-indent">
+                  <span class="t-str">name</span>:
+                  <span class="t-val">"Mohammad Hossein Amirabedin"</span>,
+                </p>
+                <p class="t-line t-indent">
+                  <span class="t-str">role</span>:
+                  <span class="t-val">"Frontend & WordPress Developer"</span>,
+                </p>
+                <p class="t-line t-indent">
+                  <span class="t-str">exp</span>: <span class="t-num">4</span>,
+                  <span class="t-comment">// years</span>
+                </p>
+                <p class="t-line t-indent">
+                  <span class="t-str">stack</span>: [<span class="t-val"
+                    >"HTML"</span
+                  >, <span class="t-val">"CSS"</span>,
+                  <span class="t-val">"JS"</span>,
+                  <span class="t-val">"WP"</span>,
+                  <span class="t-val">"Flutter"</span>],
+                </p>
+                <p class="t-line t-indent">
+                  <span class="t-str">available</span>:
+                  <span class="t-bool">true</span>
+                </p>
+                <p class="t-line">};</p>
+                <p class="t-line t-line--gap"></p>
+                <p class="t-line">
+                  <span class="t-fn">console</span>.<span class="t-method"
+                    >log</span
+                  >(<span class="t-val">"آماده همکاری هستم 🚀"</span>);
+                </p>
+                <p class="t-line t-output">▶ آماده همکاری هستم 🚀</p>
+                <p class="t-line t-line--gap"></p>
+                <p class="t-line t-hint">
+                  <span class="t-comment"># یک دستور بنویس و Enter بزن:</span>
+                </p>
+                <p class="t-line t-hint t-hint--list">
+                  <span class="t-comment">
+                    help | skills | projects | contact | clear</span
+                  >
+                </p>
+                <p class="t-line t-line--gap"></p>
+              </div>
+
+              <div id="terminalHistory"></div>
+
+              <div class="terminal__input-line" id="terminalInputLine">
+                <span class="t-prompt">
+                  <span class="t-prompt-user">mh</span
+                  ><span class="t-prompt-at">@</span
+                  ><span class="t-prompt-host">portfolio</span
+                  ><span class="t-prompt-sep">:</span
+                  ><span class="t-prompt-dir">~</span
+                  ><span class="t-prompt-sign">$</span>
+                </span>
+                <div class="t-input-wrapper">
+                  <span
+                    class="t-input-mirror"
+                    id="inputMirror"
+                    aria-hidden="true"
+                  ></span>
+                  <input
+                    class="t-input"
+                    id="terminalInput"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    placeholder="دستور بنویس..."
+                    aria-label="ترمینال — دستور وارد کن"
+                  />
+                  <span
+                    class="t-cursor"
+                    id="termCursor"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="scroll__text">اسکرول کن</span>
+        <div class="scroll__line"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT SECTION
+    ======================================== -->
+    <section class="about section-padding" id="about" aria-label="درباره من">
+      <div class="about__inner">
+        <div class="about__visual">
+          <div class="about__image-wrapper">
+            <img src="Fox.webp" alt="محمد حسین امیرعابدین" class="about__img" />
+            <div class="about__experience-badge">
+              <span class="badge__num">۴+</span>
+              <span class="badge__text">سال<br />تجربه</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <div class="section-eyebrow">
+            <span class="eyebrow__line"></span>
+            <span>داستان من</span>
+          </div>
+
+          <h2 class="section-title">
+            من کد نمی‌زنم که فقط یک سایت بسازم؛<br />
+            <span class="highlight-text"
+              >من کد می‌زنم تا گره‌ای از کسب‌وکار شما باز کنم.</span
+            >
+          </h2>
+
+          <div class="about__text">
+            <p>
+              سلام! من <strong>محمدحسین امیرعابدین</strong> هستم. در دنیای
+              پررقابت دیجیتال امروز، داشتن یک وب‌سایت یا اپلیکیشن به‌تنهایی کافی
+              نیست؛ شما به ابزاری نیاز دارید که برایتان مشتری بیاورد، پروسه‌ها
+              را ساده کند و روی برندتان سرمایه‌گذاری کند.
+            </p>
+            <p>
+              در ۴ سال گذشته، تمرکز من روی خلق تجربه‌های کاربری روان و بهینه
+              بوده است. تخصص من توسعه <strong>فرانت‌اند</strong> و
+              <strong>وردپرس</strong> (از شخصی‌سازی قالب‌های آماده تا خلق
+              قالب‌های کاملاً اختصاصی) است. همچنین برای توسعه اپلیکیشن‌های
+              موبایل روی <strong>فلاتر (Flutter)</strong> مسلط هستم تا کسب‌وکار
+              شما را به جیب مخاطبانتان ببرم.
+            </p>
+            <p>
+              برای من مهم نیست پروژه چقدر پیچیده است؛ مهم این است که در نهایت،
+              محصولی که تحویل می‌گیرید دقیقاً همان مشکلی را حل کند که به خاطرش
+              سراغ من آمدید.
+            </p>
+          </div>
+
+          <ul class="about__list">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>
+              <span>دیدگاه بازاریابی و محصول‌محور در توسعه</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>
+              <span>کدنویسی تمیز، توسعه‌پذیر و بهینه برای سئو</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg>
+              <span>تعهد به زمان‌بندی و پشتیبانی بعد از تحویل</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SKILLS & SERVICES SECTION
+    ======================================== -->
+    <section
+      class="skills section-padding"
+      id="skills"
+      aria-label="مهارت‌ها و خدمات"
+    >
+      <div class="skills__inner">
+        <div class="skills__header">
+          <div class="section-eyebrow">
+            <span class="eyebrow__line"></span>
+            <span>تخصص‌های من</span>
+          </div>
+          <h2 class="section-title">
+            چگونه می‌توانم به
+            <span class="highlight-text">رشد کسب‌وکار شما</span> کمک کنم؟
+          </h2>
+          <p class="skills__desc">
+            من ابزارها و تکنولوژی‌ها را بر اساس نیاز پروژه شما انتخاب می‌کنم.
+            هدف نهایی، خلق تجربه‌ای بی‌نقص برای کاربر و بازدهی بالا برای شماست.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 3h18v18H3zM3 9h18M9 21V9" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">طراحی سایت و وردپرس</h3>
+            <p class="service-card__text">
+              توسعه رابط کاربری اختصاصی با فرانت‌اند (HTML, CSS, JS) و اجرای
+              پروژه‌های منعطف با وردپرس؛ از شخصی‌سازی قالب‌های آماده تا کدنویسی
+              قالب کاملاً اختصاصی برای نیازهای خاص شما.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">طراحی اپلیکیشن موبایل</h3>
+            <p class="service-card__text">
+              تبدیل ایده‌های شما به اپلیکیشن‌های سریع و روان با استفاده از
+              Flutter. من برنامه‌هایی می‌سازم که در جیب مشتریان شما به‌خوبی کار
+              کنند و تجربه کاربری لذت‌بخشی بسازند.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">سئو و بهینه‌سازی (SEO)</h3>
+            <p class="service-card__text">
+              یک سایت زیبا اگر دیده نشود فایده‌ای ندارد. من ساختار کدها را
+              کاملاً استاندارد، سریع و بهینه برای موتورهای جستجو (گوگل) می‌نویسم
+              تا پایه‌ای قوی برای رقابت داشته باشید.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech__container">
+          <h4 class="tech__title">
+            ابزارها و تکنولوژی‌هایی که روزانه با آن‌ها کار می‌کنم:
+          </h4>
+          <div class="tech__list">
+            <span class="tech__pill">HTML5 & CSS3</span>
+            <span class="tech__pill">JavaScript (ES6+)</span>
+            <span class="tech__pill">WordPress</span>
+            <span class="tech__pill">Flutter</span>
+            <span class="tech__pill">Node.js</span>
+            <span class="tech__pill">Responsive Design</span>
+            <span class="tech__pill">Custom Themes</span>
+            <span class="tech__pill">SEO Friendly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SERVICES SECTION (راهکارهای اجرایی)
+    ======================================== -->
+    <section
+      class="services section-padding"
+      id="services"
+      aria-label="خدمات و راهکارها"
+    >
+      <div class="services__inner">
+        <div class="services__head">
+          <div class="section-eyebrow">
+            <span class="eyebrow__line"></span>
+            <span>ارزش‌آفرینی برای شما</span>
+          </div>
+          <h2 class="section-title">
+            من برای کسب‌وکار شما <br />
+            <span class="highlight-text">چه چیزی خلق می‌کنم؟</span>
+          </h2>
+          <p class="services__intro">
+            من صرفاً مجری کدهای شما نیستم؛ من شریک فنی شما در مسیر رشد دیجیتال
+            هستم. هر خط کدی که می‌نویسم، با هدف افزایش فروش، جذب کاربر و ساخت یک
+            برند قدرتمند برای شما طراحی می‌شود.
+          </p>
+        </div>
+
+        <div class="services__grid-modern">
+          <article class="svc-card">
+            <div class="svc-card__top">
+              <span class="svc-card__num">01</span>
+              <div class="svc-card__line"></div>
+              <div class="svc-card__icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="svc-card__title">توسعه وب‌سایت‌های نتیجه‌گرا</h3>
+            <p class="svc-card__text">
+              وب‌سایت شما فقط یک بروشور آنلاین نیست؛ بلکه شعبه‌ای از کسب‌وکار
+              شماست که هیچ‌وقت تعطیل نمی‌شود. من پلتفرم‌هایی (با فرانت‌اند
+              اختصاصی یا وردپرس) طراحی می‌کنم که کاربر را درگیر کرده، اعتماد او
+              را جلب کند و بازدیدکننده را به مشتری وفادار تبدیل سازد.
+            </p>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-card__top">
+              <span class="svc-card__num">02</span>
+              <div class="svc-card__line"></div>
+              <div class="svc-card__icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="svc-card__title">حضور در جیب مشتری با اپلیکیشن</h3>
+            <p class="svc-card__text">
+              آینده کسب‌وکارها در موبایل است. با استفاده از فلاتر (Flutter)،
+              اپلیکیشن‌هایی بومی، سریع و بی‌نقص می‌سازم. هدف من این است که برند
+              شما همیشه در دسترس مخاطب باشد و بالاترین نرخ بازگشت مشتری
+              (Retention) را تجربه کنید.
+            </p>
+          </article>
+
+          <article class="svc-card">
+            <div class="svc-card__top">
+              <span class="svc-card__num">03</span>
+              <div class="svc-card__line"></div>
+              <div class="svc-card__icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="svc-card__title">سئو تکنیکال و زیرساخت رقابتی</h3>
+            <p class="svc-card__text">
+              زیباترین معماری‌ها بدون دیده شدن، بی‌فایده‌اند. من از همان خط اولِ
+              کدنویسی، استانداردهای سخت‌گیرانه موتورهای جستجو و سرعت (Core Web
+              Vitals) را پیاده می‌کنم تا مسیر رسیدن به رتبه‌های اول گوگل برایتان
+              هموار باشد.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         PROJECTS SECTION (نمونه کارها)
+    ======================================== -->
+    <section
+      class="projects section-padding"
+      id="projects"
+      aria-label="نمونه کارهای من"
+    >
+      <div class="projects__inner">
+        <div class="projects__head">
+          <div class="section-eyebrow">
+            <span class="eyebrow__line"></span>
+            <span>نمونه کارها</span>
+          </div>
+          <h2 class="section-title">
+            کدهایی که تبدیل به <br />
+            <span class="highlight-text">کسب‌وکارهای موفق شدند.</span>
+          </h2>
+          <p class="projects__intro">
+            در اینجا تعدادی از پروژه‌های اخیرم را مشاهده می‌کنید. هر کدام از این
+            پلتفرم‌ها برای حل یک چالش تجاری خاص، تسهیل فرآیندها و ایجاد تجربه
+            کاربری روان طراحی و توسعه داده شده‌اند.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="hormuzjavidan.webp"
+                alt="هرمز جاویدان"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">حمل و نقل بین‌المللی</span>
+                <span class="project-card__tech">Front-end</span>
+              </div>
+              <h3 class="project-card__title">هرمز جاویدان (Hormuz Javidan)</h3>
+              <p class="project-card__desc">
+                پایگاه آنلاین یک شرکت معتبر در زمینه حمل‌ونقل. تمرکز این پروژه
+                روی پرفورمنس بالا، رابط کاربری مدرن و واکنش‌گرایی کامل در تمامی
+                دستگاه‌ها بوده است.
+              </p>
+              <a
+                href="https://hormuzjavidan.com"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="denizshop.webp"
+                alt="دنیز شاپ"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">فروشگاه آنلاین</span>
+                <span class="project-card__tech">E-commerce / WP</span>
+              </div>
+              <h3 class="project-card__title">دنیز شاپ (Deniz Shop)</h3>
+              <p class="project-card__desc">
+                پلتفرم فروشگاهی جامع و همه‌چیزفروش. پیاده‌سازی مسیر خرید
+                (Checkout) سریع، سیستم فیلترینگ پیشرفته و دسته‌بندی محصولات برای
+                افزایش نرخ تبدیل کاربر به خریدار.
+              </p>
+              <a
+                href="https://guysh316.github.io/denizshopq/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="denizhome.webp"
+                alt="دنیز هوم"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">فروشگاه دکوراسیون</span>
+                <span class="project-card__tech">UI / HTML CSS JS</span>
+              </div>
+              <h3 class="project-card__title">دنیز هوم (Deniz Home)</h3>
+              <p class="project-card__desc">
+                طراحی و کدنویسی فرانت‌اند صفحه اصلی (Landing Page) یک فروشگاه
+                دکوراسیون داخلی. تمرکز روی انیمیشن‌های ظریف و چیدمان چشم‌نواز
+                برای نمایش زیبایی محصولات.
+              </p>
+              <a
+                href="https://guysh316.github.io/denizhome/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="rastatarabar.webp"
+                alt="رستا ترابر"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">حمل و نقل بین‌المللی</span>
+                <span class="project-card__tech">Wordpress / Front-end</span>
+              </div>
+              <h3 class="project-card__title">رستا ترابر (Rasta Tarabar)</h3>
+              <p class="project-card__desc">
+                پلتفرم اختصاصی برای شرکت حمل‌ونقل بین‌المللی. طراحی این سایت با
+                تمرکز بر القای حس اعتماد به مشتریان سازمانی و دسترسی سریع به
+                خدمات لجستیک پیاده‌سازی شده است.
+              </p>
+              <a
+                href="https://rastatarabar.com"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="parsayan.webp"
+                alt="پارسایان"
+                class="project-card__img"
+              />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">حمل و نقل بین‌المللی</span>
+                <span class="project-card__tech">Wordpress / UI</span>
+              </div>
+              <h3 class="project-card__title">پارسایان (Parsayan)</h3>
+              <p class="project-card__desc">
+                توسعه وب‌سایت شرکتی در حوزه ترانزیت و حمل‌ونقل. در این پروژه،
+                ساختار اطلاعات بهینه‌سازی شد تا مشتریان بتوانند به راحتی مسیرها
+                و خدمات گمرکی را بررسی کنند.
+              </p>
+              <a
+                href="https://parsayan.co"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img src="arsalin.webp" alt="ارسالین" class="project-card__img" />
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__tag">لجستیک ایران و روسیه</span>
+                <span class="project-card__tech">Custom Dev / SEO</span>
+              </div>
+              <h3 class="project-card__title">ارسالین (Arsalin)</h3>
+              <p class="project-card__desc">
+                یک پل ارتباطی دیجیتال برای تسهیل حمل‌ونقل کالا بین ایران و
+                روسیه. طراحی چندزبانه و بهینه‌سازی شده برای موتورهای جستجو در
+                بازارهای هدف.
+              </p>
+              <a
+                href="https://arsalin.com"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                مشاهده پروژه
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+     CONTACT SECTION & FOOTER
+======================================== -->
+    <section
+      class="contact section-padding"
+      id="contact"
+      aria-label="تماس با من"
+    >
+      <div class="contact__inner">
+        <!-- Left Info -->
+        <div class="contact__info">
+          <div class="section-eyebrow">
+            <span class="eyebrow__line"></span>
+            <span>شروع همکاری</span>
+          </div>
+
+          <h2 class="section-title">
+            آماده‌اید تا ایده‌هایتان را به <br />
+            <span class="highlight-text">واقعیت تبدیل کنیم؟</span>
+          </h2>
+
+          <p class="contact__text">
+            من همیشه برای چالش‌های جدید و پروژه‌های هیجان‌انگیز آماده‌ام. چه یک
+            ایده خام داشته باشید و چه نیاز به بازطراحی یک کسب‌وکار بزرگ، بیایید
+            یک فنجان قهوه مجازی بنوشیم و درباره مسیر موفقیت شما صحبت کنیم.
+          </p>
+
+          <div class="contact__methods">
+            <a
+              href="mailto:mohammadhossienamirabedin@gmail.com"
+              class="contact-method"
+            >
+              <div class="contact-method__icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contact-method__details">
+                <span class="contact-method__label">ارسال ایمیل مستقیم</span>
+                <span class="contact-method__value"
+                  >mohammadhossienamirabedin@gmail.com</span
+                >
+              </div>
+            </a>
+
+            <div class="contact__socials">
+              <span class="socials-label">در شبکه‌های اجتماعی:</span>
+              <div class="socials-links">
+                <a
+                  href="https://t.me/FirstNapoleon"
+                  target="_blank"
+                  aria-label="تلگرام من"
+                  class="social-link"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M21.5 2l-19 7.5 5.5 2.5 2 7 2.5-4 4.5 4.5 4.5-17.5z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/m.h.amirabedin/"
+                  target="_blank"
+                  aria-label="اینستاگرام من"
+                  class="social-link"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact__form-wrap">
+          <form class="contact-form" action="#" method="POST">
+            <h3 class="form-title">برای من پیام بفرستید</h3>
+
+            <div class="form-group">
+              <label for="name" class="form-label">نام و نام خانوادگی</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="مثلاً: علی احمدی"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">ایمیل شما</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label"
+                >درباره پروژه‌تان بگویید...</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="نیاز به یک وب‌سایت فروشگاهی دارم که..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta btn-cta--full form-submit">
+              ارسال پیام
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>تمامی حقوق محفوظ است.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
