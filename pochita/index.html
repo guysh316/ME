@@ -2,23 +2,30 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="theme-color" content="#EFE6EC" />
+    <meta name="theme-color" content="#EBDFCF" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Wiish Accessories | هدر</title>
+    <title>مایا گالری | هدر و منو</title>
     <link
       rel="preload"
-      href="assets/fonts/BonyadeKoodak.woff"
+      href="assets/fonts/Peyda-Regular.ttf"
       as="font"
-      type="font/woff"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
       crossorigin
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <svg width="0" height="0" class="sprite" aria-hidden="true">
       <symbol id="i-all" viewBox="0 0 24 24">
         <rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2" class="f" />
         <rect x="3.5" y="13" width="7.5" height="7.5" rx="2" class="f" />
@@ -112,665 +119,421 @@
       <symbol id="i-x" viewBox="0 0 24 24">
         <path d="M6 6l12 12M18 6 6 18" />
       </symbol>
+
+      <defs>
+        <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#EBCF98" />
+          <stop offset="1" stop-color="#C9A15B" />
+        </linearGradient>
+        <linearGradient id="g-cream" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FCF8F2" />
+          <stop offset="1" stop-color="#EADDC8" />
+        </linearGradient>
+        <linearGradient id="g-esp" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4F342A" />
+          <stop offset="1" stop-color="#2B1A14" />
+        </linearGradient>
+        <linearGradient id="g-maple" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#B8643F" />
+          <stop offset="1" stop-color="#9E4426" />
+        </linearGradient>
+      </defs>
       <symbol id="i-bow" viewBox="0 0 32 32">
         <path
-          d="M16 16c-3-5-9-7-11-4s1 8 5 7c3-.7 5-2 6-3Zm0 0c3-5 9-7 11-4s-1 8-5 7c-3-.7-5-2-6-3Z"
+          d="m6 22 2-11 6 6 2-9 2 9 6-6 2 11Z"
           fill="none"
-          stroke="#1E1A1D"
+          stroke="#2B1A14"
+          stroke-width="1.7"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6.5 26h19"
+          stroke="#C9A15B"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <circle cx="8" cy="10" r="1.3" fill="#C9A15B" />
+        <circle cx="16" cy="7" r="1.3" fill="#C9A15B" />
+        <circle cx="24" cy="10" r="1.3" fill="#C9A15B" />
+      </symbol>
+      <symbol id="i3-all" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <rect x="7" y="7" width="22" height="22" rx="6" fill="url(#g-gold)" />
+        <rect x="7" y="35" width="22" height="22" rx="6" fill="url(#g-esp)" />
+        <rect x="35" y="35" width="22" height="22" rx="6" fill="url(#g-gold)" />
+        <path d="m46 5 10 10-10 10-10-10Z" fill="url(#g-esp)" />
+      </symbol>
+      <symbol id="i3-pj" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="M22 8 8 16l4 14 6-2v28h28V28l6 2 4-14-14-8-10 10Z"
+          fill="url(#g-cream)"
+          stroke="#C9A15B"
           stroke-width="1.6"
           stroke-linejoin="round"
         />
-        <circle cx="16" cy="16" r="2" fill="#1E1A1D" />
         <path
-          d="M14.5 18c-1 3-2 5-3 8M17.5 18c1 3 2 5 3 8"
+          d="m22 8 10 14L42 8"
           fill="none"
-          stroke="#1E1A1D"
+          stroke="#C9A15B"
           stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <g fill="#C9A15B">
+          <circle cx="32" cy="31" r="1.8" />
+          <circle cx="32" cy="39" r="1.8" />
+          <circle cx="32" cy="47" r="1.8" />
+        </g>
+        <circle cx="24" cy="40" r="2.4" fill="#2B1A14" />
+        <circle cx="40" cy="46" r="2.4" fill="#2B1A14" />
+      </symbol>
+      <symbol id="i3-pants" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path d="M19 6h26l6 52H36L32 26l-4 32H13Z" fill="url(#g-gold)" />
+        <path d="M19 6h26v6H19Z" fill="url(#g-esp)" />
+        <path
+          d="m21.5 14-6 44M42.5 14l6 44"
+          stroke="#F6EFE6"
+          stroke-width="2.2"
+          fill="none"
+          opacity=".9"
+        />
+      </symbol>
+      <symbol id="i3-hood" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="m20 22-12 8 4 16 6-2v12h28V44l6 2 4-16-12-8Z"
+          fill="url(#g-gold)"
+        />
+        <path d="M21 23C20 8 44 8 43 23c-4 4-18 4-22 0Z" fill="url(#g-esp)" />
+        <rect
+          x="23"
+          y="44"
+          width="18"
+          height="8"
+          rx="3"
+          fill="#F6EFE6"
+          opacity=".85"
+        />
+        <path
+          d="M28 28v8M36 28v8"
+          stroke="#F6EFE6"
+          stroke-width="1.8"
           stroke-linecap="round"
         />
+      </symbol>
+      <symbol id="i3-set" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="M23 4 13 9l2 12 6-2v9h22v-9l6 2 2-12-10-5c-3 5-17 5-19 0Z"
+          fill="url(#g-cream)"
+          stroke="#C9A15B"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <path d="M21 33h22l11 25H10Z" fill="url(#g-gold)" />
+        <path d="M21 33h22v4H21Z" fill="url(#g-esp)" />
+        <circle cx="32" cy="14" r="2" fill="#C9A15B" />
+      </symbol>
+      <symbol id="i3-manto" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="m22 6-12 8 3 14 6-2-2 32h30l-2-32 6 2 3-14-12-8-10 10Z"
+          fill="url(#g-gold)"
+        />
+        <path
+          d="m22 6 10 10L42 6"
+          fill="none"
+          stroke="#2B1A14"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path d="M17.5 32h29v4h-29Z" fill="url(#g-esp)" />
+        <circle cx="32" cy="45" r="1.8" fill="#F6EFE6" />
+        <circle cx="32" cy="52" r="1.8" fill="#F6EFE6" />
+      </symbol>
+      <symbol id="i3-blouse" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="m21 8-13 7 3 12 7-2v27h28V25l7 2 3-12-13-7c-3 6-19 6-22 0Z"
+          fill="url(#g-cream)"
+          stroke="#C9A15B"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <path d="m32 15-7-5v8Zm0 0 7-5v8Z" fill="url(#g-esp)" />
+        <circle cx="32" cy="15" r="2.2" fill="#C9A15B" />
+      </symbol>
+      <symbol id="i3-skirt" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path d="M21 10h22l13 46H8Z" fill="url(#g-gold)" />
+        <path d="M21 10h22v6H21Z" fill="url(#g-esp)" />
+        <path
+          d="m27 18-8 38m10-38v38m6-38 4 38"
+          stroke="#F6EFE6"
+          stroke-width="1.6"
+          fill="none"
+          opacity=".7"
+        />
+      </symbol>
+      <symbol id="i3-coat" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path
+          d="m20 8-12 8 2 16 6-2-1 26h34l-1-26 6 2 2-16-12-8Z"
+          fill="url(#g-cream)"
+          stroke="#C9A15B"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M20 8c4 10 20 10 24 0 3 6-3 15-12 15S17 14 20 8Z"
+          fill="url(#g-gold)"
+        />
+        <path d="M16 38h32v4H16Z" fill="url(#g-esp)" />
+      </symbol>
+      <symbol id="i3-jeans" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path d="M19 6h26l6 52H36L32 24l-4 34H13Z" fill="url(#g-esp)" />
+        <path d="M19 6h26v5H19Z" fill="url(#g-gold)" />
+        <path
+          d="M32 11v13M22 14c0 5 3 7 6 7M42 14c0 5-3 7-6 7"
+          stroke="#C9A15B"
+          stroke-width="1.5"
+          fill="none"
+          stroke-dasharray="3 2.5"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i3-gift" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <rect x="12" y="29" width="40" height="27" rx="4" fill="url(#g-gold)" />
+        <rect x="8" y="21" width="48" height="11" rx="4" fill="url(#g-esp)" />
+        <rect x="28" y="21" width="8" height="35" fill="url(#g-cream)" />
+        <path
+          d="M32 21C27 10 15 11 17 17s10 4 15 4Zm0 0c5-11 17-10 15-4s-10 4-15 4Z"
+          fill="url(#g-cream)"
+          stroke="#C9A15B"
+          stroke-width="1.4"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i3-sale" viewBox="0 0 64 64">
+        <ellipse
+          cx="32"
+          cy="60"
+          rx="18"
+          ry="2.8"
+          fill="#8F6A2E"
+          opacity=".22"
+        />
+        <path d="M8 8h22l28 28-22 22L8 30Z" fill="url(#g-maple)" />
+        <circle cx="18" cy="18" r="3" fill="#F6EFE6" />
+        <g
+          stroke="#F6EFE6"
+          stroke-width="2.4"
+          fill="none"
+          stroke-linecap="round"
+        >
+          <circle cx="27" cy="30" r="3.2" />
+          <circle cx="38" cy="41" r="3.2" />
+          <path d="m39 28-13 15" />
+        </g>
       </symbol>
     </svg>
 
     <!-- 3D category icons (brand palette) -->
-    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
-      <defs>
-        <linearGradient id="g-pink" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#F9D6EC" />
-          <stop offset="1" stop-color="#D9A6C8" />
-        </linearGradient>
-        <linearGradient id="g-rose" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#D9A6C8" />
-          <stop offset="1" stop-color="#B97A9F" />
-        </linearGradient>
-        <linearGradient id="g-white" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#FFFFFF" />
-          <stop offset="1" stop-color="#EAD9E3" />
-        </linearGradient>
-        <linearGradient id="g-dark" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#7A6B76" />
-          <stop offset="1" stop-color="#1E1A1D" />
-        </linearGradient>
-      </defs>
-      <symbol id="i3-all" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="59" rx="21" ry="3" fill="#B97A9F" opacity=".22" />
-        <rect x="8" y="8" width="21" height="21" rx="6.5" fill="url(#g-rose)" />
-        <rect
-          x="8"
-          y="33"
-          width="21"
-          height="21"
-          rx="6.5"
-          fill="url(#g-pink)"
-        />
-        <rect
-          x="33"
-          y="33"
-          width="21"
-          height="21"
-          rx="6.5"
-          fill="url(#g-dark)"
-        />
-        <rect
-          x="35"
-          y="7"
-          width="18"
-          height="18"
-          rx="5"
-          transform="rotate(45 44 16)"
-          fill="url(#g-pink)"
-        />
-        <path
-          d="M12 15a5 5 0 0 1 5-5h5M12 40a5 5 0 0 1 5-5h5M37 40a5 5 0 0 1 5-5h5"
-          fill="none"
-          stroke="#fff"
-          stroke-width="2"
-          stroke-linecap="round"
-          opacity=".5"
-        />
-      </symbol>
-      <symbol id="i3-charm" viewBox="0 0 64 64">
-        <ellipse
-          cx="32"
-          cy="60"
-          rx="16"
-          ry="2.8"
-          fill="#B97A9F"
-          opacity=".22"
-        />
-        <circle
-          cx="32"
-          cy="7.5"
-          r="4.5"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="2.4"
-        />
-        <circle cx="16" cy="22" r="8.5" fill="url(#g-rose)" />
-        <circle cx="16" cy="22" r="4.5" fill="#F9D6EC" />
-        <circle cx="48" cy="22" r="8.5" fill="url(#g-rose)" />
-        <circle cx="48" cy="22" r="4.5" fill="#F9D6EC" />
-        <circle cx="32" cy="38" r="19.5" fill="url(#g-white)" />
-        <circle cx="21.5" cy="43" r="3.2" fill="#F9D6EC" />
-        <circle cx="42.5" cy="43" r="3.2" fill="#F9D6EC" />
-        <ellipse cx="32" cy="44" rx="7.5" ry="5.5" fill="url(#g-pink)" />
-        <ellipse cx="32" cy="41.3" rx="3" ry="2" fill="#1E1A1D" />
-        <path
-          d="M29.5 46.3q2.5 2 5 0"
-          fill="none"
-          stroke="#1E1A1D"
-          stroke-width="1.4"
-          stroke-linecap="round"
-        />
-        <circle cx="24.5" cy="36" r="2.3" fill="#1E1A1D" />
-        <circle cx="39.5" cy="36" r="2.3" fill="#1E1A1D" />
-        <circle cx="25.2" cy="35.2" r=".8" fill="#fff" />
-        <circle cx="40.2" cy="35.2" r=".8" fill="#fff" />
-        <ellipse
-          cx="23"
-          cy="28"
-          rx="6"
-          ry="3"
-          transform="rotate(-30 23 28)"
-          fill="#fff"
-          opacity=".65"
-        />
-      </symbol>
-      <symbol id="i3-bag" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="60" rx="21" ry="3" fill="#B97A9F" opacity=".22" />
-        <path
-          d="M23 25v-4a9 9 0 0 1 18 0v4"
-          fill="none"
-          stroke="url(#g-dark)"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-        <path
-          d="M13 24h38l4 29a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4Z"
-          fill="url(#g-rose)"
-        />
-        <path d="M13 24h38l1.5 10.5Q32 41 11.5 34.5Z" fill="url(#g-pink)" />
-        <circle
-          cx="32"
-          cy="38"
-          r="3.6"
-          fill="url(#g-white)"
-          stroke="#B97A9F"
-          stroke-width="1"
-        />
-        <path
-          d="M15.5 42l-2 10"
-          stroke="#fff"
-          stroke-width="2.2"
-          stroke-linecap="round"
-          opacity=".45"
-        />
-      </symbol>
-      <symbol id="i3-neck" viewBox="0 0 64 64">
-        <path
-          d="M9 8c0 23 10 33 23 33s23-10 23-33"
-          fill="none"
-          stroke="url(#g-rose)"
-          stroke-width="3.5"
-          stroke-linecap="round"
-        />
-        <circle
-          cx="32"
-          cy="41"
-          r="3"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="2"
-        />
-        <path
-          d="M32 60s-13-7.5-13-16.5a7.2 7.2 0 0 1 13-4.2 7.2 7.2 0 0 1 13 4.2C45 52.5 32 60 32 60Z"
-          fill="url(#g-pink)"
-          stroke="#D9A6C8"
-          stroke-width="1"
-        />
-        <ellipse
-          cx="26.5"
-          cy="44"
-          rx="2.8"
-          ry="1.7"
-          transform="rotate(-35 26.5 44)"
-          fill="#fff"
-          opacity=".8"
-        />
-      </symbol>
-      <symbol id="i3-gift" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="60" rx="22" ry="3" fill="#B97A9F" opacity=".22" />
-        <rect x="12" y="29" width="40" height="27" rx="4" fill="url(#g-pink)" />
-        <path
-          d="M44 29h4a4 4 0 0 1 4 4v19a4 4 0 0 1-4 4h-4Z"
-          fill="#B97A9F"
-          opacity=".22"
-        />
-        <rect x="8" y="21" width="48" height="11" rx="4" fill="url(#g-rose)" />
-        <rect x="28" y="21" width="8" height="35" fill="url(#g-white)" />
-        <path
-          d="M32 21C27 10 15 11 17 17s10 4 15 4Zm0 0C37 10 49 11 47 17s-10 4-15 4Z"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-          stroke-width="1.4"
-          stroke-linejoin="round"
-        />
-        <ellipse
-          cx="32"
-          cy="21"
-          rx="4"
-          ry="3.2"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-          stroke-width="1.2"
-        />
-        <path
-          d="M12 25h12"
-          stroke="#fff"
-          stroke-width="2"
-          stroke-linecap="round"
-          opacity=".5"
-        />
-      </symbol>
-      <symbol id="i3-store" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="60" rx="23" ry="3" fill="#B97A9F" opacity=".22" />
-        <rect
-          x="12"
-          y="30"
-          width="40"
-          height="26"
-          rx="3"
-          fill="url(#g-white)"
-        />
-        <path d="M12 14h40l4 16H8Z" fill="url(#g-pink)" />
-        <path
-          d="M20 14h8l-.8 16h-9.6ZM36 14h8l2.4 16h-9.6Z"
-          fill="url(#g-rose)"
-        />
-        <path
-          d="M12 17h12"
-          stroke="#fff"
-          stroke-width="2"
-          stroke-linecap="round"
-          opacity=".6"
-        />
-        <rect x="27" y="40" width="10" height="16" rx="2" fill="url(#g-rose)" />
-        <rect x="15" y="38" width="9" height="9" rx="2" fill="url(#g-pink)" />
-        <rect x="40" y="38" width="9" height="9" rx="2" fill="url(#g-pink)" />
-      </symbol>
-      <symbol id="i3-brace" viewBox="0 0 64 64">
-        <ellipse
-          cx="32"
-          cy="60"
-          rx="22"
-          ry="2.8"
-          fill="#B97A9F"
-          opacity=".22"
-        />
-        <path
-          d="M10 33a22 14 0 0 1 44 0"
-          fill="none"
-          stroke="#D9A6C8"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-        <path
-          d="M10 33a22 14 0 0 0 44 0"
-          fill="none"
-          stroke="url(#g-rose)"
-          stroke-width="5"
-          stroke-linecap="round"
-        />
-        <circle
-          cx="52.7"
-          cy="38.8"
-          r="3.4"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-        />
-        <circle
-          cx="44.6"
-          cy="45.5"
-          r="3.4"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-        />
-        <circle
-          cx="19.4"
-          cy="45.5"
-          r="3.4"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-        />
-        <circle
-          cx="11.3"
-          cy="38.8"
-          r="3.4"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-        />
-        <path
-          d="M32 59s-7-4.2-7-9.2a3.8 3.8 0 0 1 7-2 3.8 3.8 0 0 1 7 2c0 5-7 9.2-7 9.2Z"
-          fill="url(#g-pink)"
-          stroke="#D9A6C8"
-        />
-      </symbol>
-      <symbol id="i3-ear" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="60" rx="22" ry="2.6" fill="#B97A9F" opacity=".2" />
-        <circle
-          cx="19"
-          cy="9"
-          r="4"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="2"
-        />
-        <path
-          d="M19 13v8"
-          stroke="#B97A9F"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <path
-          d="M19 21c6 7 9 11 9 16a9 9 0 0 1-18 0c0-5 3-9 9-16Z"
-          fill="url(#g-rose)"
-        />
-        <ellipse
-          cx="15.5"
-          cy="35"
-          rx="2"
-          ry="3.4"
-          transform="rotate(12 15.5 35)"
-          fill="#fff"
-          opacity=".55"
-        />
-        <circle
-          cx="45"
-          cy="9"
-          r="4"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="2"
-        />
-        <circle cx="45" cy="21" r="3.4" fill="url(#g-pink)" stroke="#D9A6C8" />
-        <path
-          d="M45 24.4V30"
-          stroke="#B97A9F"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <circle cx="45" cy="40" r="9.5" fill="url(#g-white)" stroke="#EAD9E3" />
-        <ellipse
-          cx="41.5"
-          cy="36.5"
-          rx="3"
-          ry="2"
-          transform="rotate(-35 41.5 36.5)"
-          fill="#fff"
-        />
-      </symbol>
-      <symbol id="i3-ring" viewBox="0 0 64 64">
-        <ellipse
-          cx="32"
-          cy="61"
-          rx="15"
-          ry="2.4"
-          fill="#B97A9F"
-          opacity=".22"
-        />
-        <circle
-          cx="32"
-          cy="42"
-          r="15"
-          fill="none"
-          stroke="url(#g-rose)"
-          stroke-width="5.5"
-        />
-        <path
-          d="M32 6l9 7-9 14-9-14Z"
-          fill="url(#g-white)"
-          stroke="#D9A6C8"
-          stroke-width="1.4"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M23 13h18M32 6l-3.5 7L32 27l3.5-14Z"
-          fill="none"
-          stroke="#D9A6C8"
-          stroke-width="1.1"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M50 10v6M47 13h6"
-          stroke="#D9A6C8"
-          stroke-width="1.6"
-          stroke-linecap="round"
-        />
-      </symbol>
-      <symbol id="i3-clip" viewBox="0 0 64 64">
-        <ellipse
-          cx="32"
-          cy="61"
-          rx="20"
-          ry="2.6"
-          fill="#B97A9F"
-          opacity=".22"
-        />
-        <path d="M30 36 19 56l10-3.5 3 6.5Z" fill="url(#g-rose)" />
-        <path d="M34 36 45 56l-10-3.5-3 6.5Z" fill="url(#g-rose)" />
-        <path
-          d="M32 30C26 12 7 13 7 25s15 13 25 5Z"
-          fill="url(#g-pink)"
-          stroke="#D9A6C8"
-          stroke-width="1.5"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M32 30C38 12 57 13 57 25S42 38 32 30Z"
-          fill="url(#g-pink)"
-          stroke="#D9A6C8"
-          stroke-width="1.5"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M13 21c3-4 9-4 13-1M51 21c-3-4-9-4-13-1"
-          fill="none"
-          stroke="#fff"
-          stroke-width="2"
-          stroke-linecap="round"
-          opacity=".7"
-        />
-        <ellipse cx="32" cy="30" rx="6" ry="7" fill="url(#g-rose)" />
-      </symbol>
-      <symbol id="i3-key" viewBox="0 0 64 64">
-        <circle
-          cx="32"
-          cy="10"
-          r="6.5"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="3"
-        />
-        <ellipse
-          cx="32"
-          cy="23"
-          rx="2.6"
-          ry="4.5"
-          fill="none"
-          stroke="#B97A9F"
-          stroke-width="2.2"
-        />
-        <circle cx="32" cy="37" r="10.5" fill="url(#g-rose)" />
-        <circle cx="32" cy="35.5" r="3.6" fill="#FBF3F6" />
-        <rect
-          x="29"
-          y="45"
-          width="6"
-          height="15"
-          rx="2.5"
-          fill="url(#g-rose)"
-        />
-        <rect
-          x="35"
-          y="50"
-          width="5.5"
-          height="3.5"
-          rx="1.3"
-          fill="url(#g-rose)"
-        />
-        <rect
-          x="35"
-          y="55.5"
-          width="4"
-          height="3.5"
-          rx="1.3"
-          fill="url(#g-rose)"
-        />
-        <ellipse
-          cx="26.5"
-          cy="32"
-          rx="2.4"
-          ry="4"
-          transform="rotate(25 26.5 32)"
-          fill="#fff"
-          opacity=".5"
-        />
-      </symbol>
-      <symbol id="i3-mail" viewBox="0 0 64 64">
-        <ellipse cx="32" cy="59" rx="23" ry="3" fill="#B97A9F" opacity=".22" />
-        <rect
-          x="8"
-          y="16"
-          width="48"
-          height="36"
-          rx="5"
-          fill="url(#g-white)"
-          stroke="#EAD9E3"
-        />
-        <path
-          d="M8 21a5 5 0 0 1 5-5h38a5 5 0 0 1 5 5L32 39Z"
-          fill="url(#g-pink)"
-          stroke="#D9A6C8"
-          stroke-width="1.2"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M32 47s-7-4.2-7-9a3.7 3.7 0 0 1 7-2 3.7 3.7 0 0 1 7 2c0 4.8-7 9-7 9Z"
-          fill="url(#g-rose)"
-        />
-        <path
-          d="M13 22l12 9"
-          stroke="#fff"
-          stroke-width="2"
-          stroke-linecap="round"
-          opacity=".6"
-        />
-      </symbol>
-    </svg>
+    <svg width="0" height="0" class="sprite" aria-hidden="true"></svg>
 
     <!-- Bottom-nav icons: outline when idle, duotone when active (via --nav-fill / --nav-acc) -->
-    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <svg width="0" height="0" class="sprite" aria-hidden="true">
       <symbol id="n-home" viewBox="0 0 24 24">
         <path
           d="M5.2 10.7 12 5l6.8 5.7V19a1.8 1.8 0 0 1-1.8 1.8H7A1.8 1.8 0 0 1 5.2 19Z"
-          style="fill: var(--nav-fill, none)"
+          class="nav-fill"
         />
         <path d="M2.9 11.7 12 4l9.1 7.7" />
         <path d="M16.6 7.6V4.9h2.1v4.5" />
-        <path
-          d="M9.9 20.8v-4.3a2.1 2.1 0 0 1 4.2 0v4.3"
-          style="fill: var(--nav-acc, none)"
-        />
+        <path d="M9.9 20.8v-4.3a2.1 2.1 0 0 1 4.2 0v4.3" class="nav-acc" />
       </symbol>
       <symbol id="n-shop" viewBox="0 0 24 24">
         <path
           d="M5.4 11.2v7.6a1.8 1.8 0 0 0 1.8 1.8h9.6a1.8 1.8 0 0 0 1.8-1.8v-7.6"
-          style="fill: var(--nav-fill, none)"
+          class="nav-fill"
         />
         <path
           d="M4.3 9.3 5.5 5a1.2 1.2 0 0 1 1.1-.9h10.8a1.2 1.2 0 0 1 1.1.9l1.2 4.3a2.6 2.6 0 0 1-5.2 0 2.6 2.6 0 0 1-5.2 0 2.6 2.6 0 0 1-5.2 0Z"
-          style="fill: var(--nav-acc, none)"
+          class="nav-acc"
         />
         <path d="M9.8 20.6v-3.7a1 1 0 0 1 1-1h2.4a1 1 0 0 1 1 1v3.7" />
       </symbol>
       <symbol id="n-cats" viewBox="0 0 24 24">
-        <rect
-          x="3.8"
-          y="3.8"
-          width="7"
-          height="7"
-          rx="2.3"
-          style="fill: var(--nav-fill, none)"
-        />
-        <circle cx="16.7" cy="7.3" r="3.5" style="fill: var(--nav-acc, none)" />
-        <rect
-          x="3.8"
-          y="13.2"
-          width="7"
-          height="7"
-          rx="2.3"
-          style="fill: var(--nav-fill, none)"
-        />
+        <rect x="3.8" y="3.8" width="7" height="7" rx="2.3" class="nav-fill" />
+        <circle cx="16.7" cy="7.3" r="3.5" class="nav-acc" />
+        <rect x="3.8" y="13.2" width="7" height="7" rx="2.3" class="nav-fill" />
         <rect
           x="13.2"
           y="13.2"
           width="7"
           height="7"
           rx="2.3"
-          style="fill: var(--nav-fill, none)"
+          class="nav-fill"
         />
       </symbol>
       <symbol id="n-cart" viewBox="0 0 24 24">
         <path
           d="M5.5 8.7h13l1 10.5a1.8 1.8 0 0 1-1.8 2H6.3a1.8 1.8 0 0 1-1.8-2Z"
-          style="fill: var(--nav-fill, none)"
+          class="nav-fill"
         />
         <path d="M8.6 8.7V7.4a3.4 3.4 0 0 1 6.8 0v1.3" />
-        <path
-          d="M9.3 12.8a2.7 2.7 0 0 0 5.4 0"
-          style="stroke: var(--nav-acc, currentColor)"
-        />
+        <path d="M9.3 12.8a2.7 2.7 0 0 0 5.4 0" class="nav-acc-stroke" />
       </symbol>
       <symbol id="n-user" viewBox="0 0 24 24">
         <path
           d="M4.7 20.5c.7-4 3.6-6.3 7.3-6.3s6.6 2.3 7.3 6.3Z"
-          style="fill: var(--nav-fill, none)"
+          class="nav-fill"
         />
-        <circle cx="12" cy="8" r="3.9" style="fill: var(--nav-acc, none)" />
+        <circle cx="12" cy="8" r="3.9" class="nav-acc" />
       </symbol>
     </svg>
 
     <!-- Mobile category cards (scroll away with the page) -->
     <div class="hd" id="hd">
       <nav class="tabs" aria-label="دسته‌بندی‌ها">
-        <a class="tab tab-all" href="/shop" aria-label="همه"
+        <a class="tab tab-all" href="#" aria-label="همه"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-all" /></svg></span
-        ></a>
-        <a class="tab" href="/c/mini-charm" aria-current="page"
+            ><svg class="ic3"><use href="#i3-all" /></svg></span></a
+        ><a class="tab" href="#" aria-current="page"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-charm" /></svg></span
-          ><span class="tab-t">مینی چارم</span></a
-        >
-        <a class="tab" href="/c/bag-charm"
+            ><svg class="ic3"><use href="#i3-pj" /></svg></span
+          ><span class="tab-t">پیژامه</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-bag" /></svg></span
-          ><span class="tab-t">آویز</span></a
-        >
-        <a class="tab" href="/c/necklace"
+            ><svg class="ic3"><use href="#i3-pants" /></svg></span
+          ><span class="tab-t">شلوار</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-neck" /></svg></span
-          ><span class="tab-t">گردنبند</span></a
-        >
-        <a class="tab" href="/c/bracelet"
+            ><svg class="ic3"><use href="#i3-hood" /></svg></span
+          ><span class="tab-t">هودی</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-brace" /></svg></span
-          ><span class="tab-t">دستبند</span></a
-        >
-        <a class="tab" href="/c/earring"
+            ><svg class="ic3"><use href="#i3-set" /></svg></span
+          ><span class="tab-t">ست</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-ear" /></svg></span
-          ><span class="tab-t">گوشواره</span></a
-        >
-        <a class="tab" href="/c/ring"
+            ><svg class="ic3"><use href="#i3-manto" /></svg></span
+          ><span class="tab-t">مانتو</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-ring" /></svg></span
-          ><span class="tab-t">انگشتر</span></a
-        >
-        <a class="tab" href="/c/hair"
+            ><svg class="ic3"><use href="#i3-blouse" /></svg></span
+          ><span class="tab-t">شومیز</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-clip" /></svg></span
-          ><span class="tab-t">گیره مو</span></a
-        >
-        <a class="tab" href="/c/keychain"
+            ><svg class="ic3"><use href="#i3-skirt" /></svg></span
+          ><span class="tab-t">دامن</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-key" /></svg></span
-          ><span class="tab-t">جاکلیدی</span></a
-        >
-        <a class="tab" href="/c/gift"
+            ><svg class="ic3"><use href="#i3-coat" /></svg></span
+          ><span class="tab-t">پالتو</span></a
+        ><a class="tab" href="#"
+          ><span class="tab-i"
+            ><svg class="ic3"><use href="#i3-jeans" /></svg></span
+          ><span class="tab-t">جین</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
             ><svg class="ic3"><use href="#i3-gift" /></svg></span
-          ><span class="tab-t">پک هدیه</span></a
-        >
-        <a class="tab" href="/happy-mail"
+          ><span class="tab-t">بسته هدیه</span></a
+        ><a class="tab" href="#"
           ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-mail" /></svg></span
-          ><span class="tab-t">Happy Mail</span></a
-        >
-        <a class="tab" href="/wholesale"
-          ><span class="tab-i"
-            ><svg class="ic3"><use href="#i3-store" /></svg></span
-          ><span class="tab-t">عمده</span></a
+            ><svg class="ic3"><use href="#i3-sale" /></svg></span
+          ><span class="tab-t">تخفیف‌ها</span></a
         >
       </nav>
 
       <!-- Sticky bar: search on mobile; full header on tablet/desktop -->
       <div class="bar" id="bar" role="banner">
         <div class="wrap row">
-          <a class="logo" href="/" aria-label="Wiish Accessories - صفحه اصلی">
+          <a class="logo" href="#" aria-label="مایا گالری - صفحه اصلی">
             <span class="logo-mark"
               ><svg><use href="#i-bow" /></svg
             ></span>
-            <span class="logo-txt">WIISH<small>ACCESSORIES</small></span>
+            <span class="logo-txt">Maya<small>GALLERY</small></span>
           </a>
 
           <form class="search" role="search" action="/search">
@@ -779,26 +542,26 @@
               type="search"
               name="q"
               placeholder=" "
-              aria-label="جستجو در ویش"
+              aria-label="جستجو در مایا گالری"
               enterkeyhint="search"
             />
-            <span class="s-ph" aria-hidden="true">جستجو در <b>ویش</b></span>
+            <span class="s-ph" aria-hidden="true">جستجو در <b>مایا</b></span>
             <button type="submit" class="s-mark" aria-label="جستجو">
               <svg><use href="#i-bow" /></svg>
             </button>
           </form>
 
-          <a class="ibtn circ heart" href="/wishlist" aria-label="علاقه‌مندی‌ها"
+          <a class="ibtn circ heart" href="#" aria-label="علاقه‌مندی‌ها"
             ><svg class="ic"><use href="#i-heart" /></svg
           ></a>
-          <a class="ibtn cart-d" href="/cart" aria-label="سبد خرید"
+          <a class="ibtn cart-d" href="#" aria-label="سبد خرید"
             ><svg class="ic"><use href="#i-bag" /></svg
             ><span class="badge js-cart" data-n="0"></span
           ></a>
-          <a class="ibtn acct" href="/account" aria-label="حساب من"
+          <a class="ibtn acct" href="#" aria-label="حساب من"
             ><svg class="ic"><use href="#i-user" /></svg
           ></a>
-          <a class="login" href="/login"
+          <a class="login" href="#"
             ><svg class="ic"><use href="#i-user" /></svg>ورود | ثبت‌نام</a
           >
         </div>
@@ -816,15 +579,15 @@
                   </svg>
                 </button>
               </li>
-              <li><a href="/c/mini-charm">مینی چارم</a></li>
-              <li><a href="/c/bag-charm">آویز</a></li>
-              <li><a href="/c/necklace">گردنبند</a></li>
-              <li><a href="/c/gift">پک هدیه</a></li>
-              <li><a href="/wholesale">فروش عمده</a></li>
+              <li><a href="#">پیژامه</a></li>
+              <li><a href="#">شلوار</a></li>
+              <li><a href="#">هودی</a></li>
+              <li><a href="#">ست</a></li>
+              <li><a href="#">مانتو</a></li>
               <li class="sp"></li>
-              <li><a href="/happy-mail" class="promo">Happy Mail</a></li>
-              <li><a href="/track">پیگیری سفارش</a></li>
-              <li><a href="/about">درباره ویش</a></li>
+              <li><a href="#" class="promo">تخفیف‌ها</a></li>
+              <li><a href="#">پیگیری سفارش</a></li>
+              <li><a href="#">درباره مایا</a></li>
             </ul>
           </div>
         </div>
@@ -832,50 +595,66 @@
           <div class="wrap">
             <div>
               <h3>
-                <svg class="ic"><use href="#i-charm" /></svg>مینی چارم
+                <svg class="ic3">
+                  <use href="#i3-pj" /></svg
+                >لباس راحتی
               </h3>
               <ul>
-                <li><a href="/c/mini-charm/bear">خرس و خرگوش</a></li>
-                <li><a href="/c/mini-charm/kitty">کیتی و دوستان</a></li>
-                <li><a href="/c/mini-charm/penguin">پنگوئن</a></li>
-                <li><a href="/c/mini-charm/fruit-flower">میوه و گل</a></li>
-                <li><a href="/c/mini-charm">همه مینی چارم‌ها</a></li>
+                <li><a href="#">پیژامه طرح کارتونی</a></li>
+                <li><a href="#">ست دونفره</a></li>
+                <li><a href="#">هودی و سوئی‌شرت</a></li>
+                <li><a href="#">همه لباس‌های راحتی</a></li>
               </ul>
             </div>
             <div>
               <h3>
-                <svg class="ic"><use href="#i-bag" /></svg>آویز
+                <svg class="ic3">
+                  <use href="#i3-pants" /></svg
+                >شلوار و جین
               </h3>
               <ul>
-                <li><a href="/c/bag-charm/bag">آویز کیف</a></li>
-                <li><a href="/c/keychain">آویز کلید</a></li>
-                <li><a href="/c/bag-charm/phone">آویز موبایل</a></li>
-                <li><a href="/c/bag-charm">همه آویزها</a></li>
+                <li><a href="#">شلوار گشاد</a></li>
+                <li><a href="#">جین گشاد</a></li>
+                <li><a href="#">شلوار فانتزی</a></li>
+                <li><a href="#">همه شلوارها</a></li>
               </ul>
             </div>
             <div>
               <h3>
-                <svg class="ic"><use href="#i-neck" /></svg>گردنبند
+                <svg class="ic3">
+                  <use href="#i3-manto" /></svg
+                >مانتو و پالتو
               </h3>
               <ul>
-                <li><a href="/c/necklace/handmade">گردنبند دستساز</a></li>
-                <li><a href="/c/bracelet">دستبند</a></li>
-                <li><a href="/c/necklace/duo">ست دوتایی</a></li>
+                <li><a href="#">مانتو</a></li>
+                <li><a href="#">شومیز</a></li>
+                <li><a href="#">پالتو و خز</a></li>
+                <li><a href="#">دامن</a></li>
               </ul>
             </div>
             <div>
               <h3>
-                <svg class="ic"><use href="#i-gift" /></svg>هدیه
+                <svg class="ic3">
+                  <use href="#i3-gift" /></svg
+                >ست و هدیه
               </h3>
               <ul>
-                <li><a href="/c/gift">پک هدیه</a></li>
-                <li><a href="/c/gift/friendship">ست دوستی</a></li>
-                <li><a href="/c/gift/duo">ست دو نفره</a></li>
-                <li><a href="/c/gift/cards">کارت تبریک</a></li>
+                <li><a href="#">ست بافت و گلدوزی</a></li>
+                <li><a href="#">بسته هدیه</a></li>
+                <li><a href="#">کارت هدیه</a></li>
               </ul>
             </div>
-            <a class="mega-img" href="/new"
-              ><b>تازه‌ها</b><span>طرح‌های جدید ویش، هر هفته</span></a
+            <a class="mega-img" href="#"
+              ><img
+                src="assets/img/image-1.webp"
+                alt="کالکشن پاییز–زمستان مایا گالری"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="mega-img-t">
+                <b>کالکشن پاییز–زمستان</b>
+                <p>تازه‌های مایا، هر هفته</p>
+              </div></a
             >
           </div>
         </div>
@@ -942,53 +721,53 @@
       id="hero"
       role="region"
       aria-roledescription="carousel"
-      aria-label="بنرهای ویش"
+      aria-label="بنرهای مایا گالری"
     >
       <div class="hero-track">
-        <a class="slide" href="/new"
-          ><picture
-            ><source
-              media="(min-width:768px)"
-              srcset="assets/img/Pastel.webp" />
+        <a class="slide" href="#">
+          <picture>
             <img
-              src="assets/img/Pastel.webp"
-              alt="تازه‌های ویش"
-              width="1200"
-              height="600"
-              decoding="async"
+              src="assets/img/swiper-1.webp"
+              alt="کالکشن پاییز–زمستان"
               fetchpriority="high"
-              draggable="false" /></picture
-        ></a>
-        <a class="slide" href="/c/gift"
-          ><img
-            src="assets/img/Gift.webp"
-            alt="پک هدیه"
-            width="1000"
-            height="1000"
-            loading="lazy"
-            decoding="async"
-            draggable="false"
-        /></a>
-        <a class="slide" href="/c/mini-charm"
-          ><img
-            src="assets/img/Mini.webp"
-            alt="مینی چارم"
-            width="2400"
-            height="600"
-            loading="lazy"
-            decoding="async"
-            draggable="false"
-        /></a>
-        <a class="slide" href="/happy-mail"
-          ><img
-            src="assets/img/Kawaii.webp"
-            alt="Happy Mail"
-            width="480"
-            height="240"
-            loading="lazy"
-            decoding="async"
-            draggable="false"
-        /></a>
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
+        </a>
+        <a class="slide is-light" href="#">
+          <picture>
+            <img
+              src="assets/img/swiper-2.webp"
+              alt="پیژامه‌های کارتونی"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
+        </a>
+        <a class="slide" href="#">
+          <picture>
+            <img
+              src="assets/img/swiper-3.webp"
+              alt="هودی و سوئی‌شرت"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
+        </a>
+        <a class="slide is-light" href="#">
+          <picture>
+            <img
+              src="assets/img/swiper-4.webp"
+              alt="بسته هدیه"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
+        </a>
       </div>
       <button type="button" class="hero-btn prev" aria-label="اسلاید قبلی">
         <svg class="ic" aria-hidden="true"><use href="#i-chev-r" /></svg>
@@ -1002,14 +781,14 @@
     <!-- Occasion cards -->
     <section class="occs" aria-labelledby="occT">
       <div class="sec-h">
-        <h2 id="occT">هدیه برای هر مناسبت</h2>
-        <a href="/gifts"
+        <h2 id="occT">انتخاب بر اساس مناسبت</h2>
+        <a href="#"
           >مشاهده همه<svg class="ic" aria-hidden="true">
             <use href="#i-chev-l" /></svg
         ></a>
       </div>
       <div class="occ-grid">
-        <a class="occ" href="/c/gift"
+        <a class="occ" href="#"
           ><img
             src="assets/img/box-1.webp"
             alt=""
@@ -1021,38 +800,38 @@
             ><svg class="ic" aria-hidden="true">
               <use href="#i-arrow-l" /></svg></span
         ></a>
-        <a class="occ" href="/c/friend"
+        <a class="occ" href="#"
           ><img
             src="assets/img/box-2.webp"
             alt=""
             loading="lazy"
             decoding="async"
             draggable="false" /><span class="occ-t"
-            ><b>برای دوستت</b><span>ست‌های دونفره</span></span
+            ><b>ست دونفره</b><span>برای تو و دوستت</span></span
           ><span class="occ-go" aria-hidden="true"
             ><svg class="ic" aria-hidden="true">
               <use href="#i-arrow-l" /></svg></span
         ></a>
-        <a class="occ" href="/c/self"
+        <a class="occ" href="#"
           ><img
             src="assets/img/box-3.webp"
             alt=""
             loading="lazy"
             decoding="async"
             draggable="false" /><span class="occ-t"
-            ><b>برای خودت</b><span>یه نازدونه کوچولو</span></span
+            ><b>خونه‌نشینی</b><span>پیژامه و لباس راحتی</span></span
           ><span class="occ-go" aria-hidden="true"
             ><svg class="ic" aria-hidden="true">
               <use href="#i-arrow-l" /></svg></span
         ></a>
-        <a class="occ" href="/c/yalda"
+        <a class="occ" href="#"
           ><img
             src="assets/img/box-4.webp"
             alt=""
             loading="lazy"
             decoding="async"
             draggable="false" /><span class="occ-t"
-            ><b>شب یلدا</b><span>هدیه‌های قرمز و انار</span></span
+            ><b>شب یلدا</b><span>قرمز و انار، گرم و دنج</span></span
           ><span class="occ-go" aria-hidden="true"
             ><svg class="ic" aria-hidden="true">
               <use href="#i-arrow-l" /></svg></span
@@ -1060,103 +839,7 @@
       </div>
     </section>
 
-    <!-- Mobile bottom nav -->
-    <nav class="bnav" aria-label="منوی اصلی">
-      <a href="/" class="on" aria-current="page"
-        ><span class="ni"
-          ><svg class="ic"><use href="#n-home" /></svg></span
-        >خانه</a
-      >
-      <a href="/shop"
-        ><span class="ni"
-          ><svg class="ic"><use href="#n-shop" /></svg></span
-        >فروشگاه</a
-      >
-      <button id="catsBtn" aria-haspopup="dialog">
-        <span class="ni"
-          ><svg class="ic"><use href="#n-cats" /></svg></span
-        >دسته‌بندی
-      </button>
-      <a href="/cart"
-        ><span class="ni"
-          ><svg class="ic"><use href="#n-cart" /></svg
-          ><span class="badge js-cart" data-n="0"></span></span
-        >سبد خرید</a
-      >
-      <a href="/account"
-        ><span class="ni"
-          ><svg class="ic"><use href="#n-user" /></svg></span
-        >حساب من</a
-      >
-    </nav>
-
-    <div class="scrim" id="scrim"></div>
-    <div
-      class="sheet"
-      id="sheet"
-      role="dialog"
-      aria-modal="true"
-      aria-label="دسته‌بندی‌ها"
-    >
-      <h2>دسته‌بندی محصولات</h2>
-      <a href="/c/mini-charm"
-        ><i
-          ><svg class="ic3"><use href="#i3-charm" /></svg></i
-        >مینی چارم</a
-      >
-      <a href="/c/bag-charm"
-        ><i
-          ><svg class="ic3"><use href="#i3-bag" /></svg></i
-        >آویز</a
-      >
-      <a href="/c/necklace"
-        ><i
-          ><svg class="ic3"><use href="#i3-neck" /></svg></i
-        >گردنبند</a
-      >
-      <a href="/c/bracelet"
-        ><i
-          ><svg class="ic3"><use href="#i3-brace" /></svg></i
-        >دستبند</a
-      >
-      <a href="/c/earring"
-        ><i
-          ><svg class="ic3"><use href="#i3-ear" /></svg></i
-        >گوشواره</a
-      >
-      <a href="/c/ring"
-        ><i
-          ><svg class="ic3"><use href="#i3-ring" /></svg></i
-        >انگشتر</a
-      >
-      <a href="/c/hair"
-        ><i
-          ><svg class="ic3"><use href="#i3-clip" /></svg></i
-        >گیره مو</a
-      >
-      <a href="/c/keychain"
-        ><i
-          ><svg class="ic3"><use href="#i3-key" /></svg></i
-        >جاکلیدی</a
-      >
-      <a href="/c/gift"
-        ><i
-          ><svg class="ic3"><use href="#i3-gift" /></svg></i
-        >پک هدیه</a
-      >
-      <a href="/happy-mail"
-        ><i
-          ><svg class="ic3"><use href="#i3-mail" /></svg></i
-        >Happy Mail</a
-      >
-      <a href="/wholesale"
-        ><i
-          ><svg class="ic3"><use href="#i3-store" /></svg></i
-        >عمده</a
-      >
-    </div>
-
-    <!-- Featured products: image-led cards with a floating white info panel. Add-to-cart circle shows from 1024px up; first card is a 2-column spotlight from 1024px up. data-tone 1-4 sets the tile colour behind the photo (3:4 photo is ideal). -->
+    <!-- Featured products slider -->
     <section class="feat" aria-labelledby="featT">
       <div class="sec-h">
         <h2 id="featT">محصولات ویژه</h2>
@@ -1177,7 +860,7 @@
           >
             <svg class="ic" aria-hidden="true"><use href="#i-chev-l" /></svg>
           </button>
-          <a href="/featured"
+          <a href="#"
             >مشاهده همه<svg class="ic" aria-hidden="true">
               <use href="#i-chev-l" /></svg
           ></a>
@@ -1192,33 +875,34 @@
         aria-label="محصولات ویژه"
       >
         <article class="pc" data-tone="1">
-          <a class="pc-i" href="/p/1" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="assets/img/action-figure.webp"
+              src="assets/img/image-1.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">٪۲۰ تخفیف</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن مینی چارم خرس صورتی به علاقه‌مندی‌ها"
+            aria-label="افزودن ست سوپر بگ وست و شلوار جاگر به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/1">مینی چارم خرس صورتی</a></h3>
-              <p class="pc-o"><s>۶۰۰٬۰۰۰</s></p>
-              <p class="pc-p"><b>۴۸۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t"><a href="#">ست سوپر بگ وست و شلوار جاگر</a></h3>
+              <p class="pc-o"><s>۱٬۲۵۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۱٬۰۰۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن مینی چارم خرس صورتی به سبد خرید"
+              aria-label="افزودن ست سوپر بگ وست و شلوار جاگر به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1230,33 +914,34 @@
           </div>
         </article>
         <article class="pc" data-tone="2">
-          <a class="pc-i" href="/p/2" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-13.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">جدید</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن آویز کیف کیتی به علاقه‌مندی‌ها"
+            aria-label="افزودن وست جین به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/2">آویز کیف کیتی</a></h3>
+              <h3 class="pc-t"><a href="#">وست جین</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۷۲۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۹۸۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن آویز کیف کیتی به سبد خرید"
+              aria-label="افزودن وست جین به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1268,33 +953,34 @@
           </div>
         </article>
         <article class="pc" data-tone="3">
-          <a class="pc-i" href="/p/3" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-12.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">٪۲۰ تخفیف</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گردنبند قلب دستساز به علاقه‌مندی‌ها"
+            aria-label="افزودن ست ندی های پشمالو نرم و گرم به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/3">گردنبند قلب دستساز</a></h3>
-              <p class="pc-o"><s>۱٬۷۵۰٬۰۰۰</s></p>
-              <p class="pc-p"><b>۱٬۴۰۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t"><a href="#">ست ندی های پشمالو نرم و گرم</a></h3>
+              <p class="pc-o"><s>۱٬۱۰۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۸۸۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گردنبند قلب دستساز به سبد خرید"
+              aria-label="افزودن ست ندی های پشمالو نرم و گرم به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1306,33 +992,34 @@
           </div>
         </article>
         <article class="pc" data-tone="4">
-          <a class="pc-i" href="/p/4" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-11.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
-          ><span class="pc-b">پرفروش</span
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن پک هدیه دوستی به علاقه‌مندی‌ها"
+            aria-label="افزودن شلوار پینترستی فول بگ به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/4">پک هدیه دوستی</a></h3>
+              <h3 class="pc-t"><a href="#">شلوار پینترستی فول بگ</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۱٬۸۹۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۲٬۱۹۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن پک هدیه دوستی به سبد خرید"
+              aria-label="افزودن شلوار پینترستی فول بگ به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1344,32 +1031,33 @@
           </div>
         </article>
         <article class="pc" data-tone="1">
-          <a class="pc-i" href="/p/5" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-10.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن دستبند مروارید به علاقه‌مندی‌ها"
+            aria-label="افزودن ست شومیز دامن کبریتی داخل خز به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/5">دستبند مروارید</a></h3>
+              <h3 class="pc-t"><a href="#">ست شومیز دامن کبریتی داخل خز</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۶۴۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۱٬۸۵۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن دستبند مروارید به سبد خرید"
+              aria-label="افزودن ست شومیز دامن کبریتی داخل خز به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1381,33 +1069,34 @@
           </div>
         </article>
         <article class="pc" data-tone="2">
-          <a class="pc-i" href="/p/6" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-9.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">٪۲۰ تخفیف</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گوشواره پروانه به علاقه‌مندی‌ها"
+            aria-label="افزودن هودی آنجل پینترستی به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/6">گوشواره پروانه</a></h3>
-              <p class="pc-o"><s>۷۰۰٬۰۰۰</s></p>
-              <p class="pc-p"><b>۵۶۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t"><a href="#">هودی آنجل پینترستی</a></h3>
+              <p class="pc-o"><s>۹۰۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۷۲۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گوشواره پروانه به سبد خرید"
+              aria-label="افزودن هودی آنجل پینترستی به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1419,33 +1108,34 @@
           </div>
         </article>
         <article class="pc" data-tone="3">
-          <a class="pc-i" href="/p/7" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-8.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">جدید</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گیره مو پاپیونی به علاقه‌مندی‌ها"
+            aria-label="افزودن دامن سوییت پاییزه به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/7">گیره مو پاپیونی</a></h3>
+              <h3 class="pc-t"><a href="#">دامن سوییت پاییزه</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۳۵۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۸۴۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گیره مو پاپیونی به سبد خرید"
+              aria-label="افزودن دامن سوییت پاییزه به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1457,32 +1147,35 @@
           </div>
         </article>
         <article class="pc" data-tone="4">
-          <a class="pc-i" href="/p/8" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-7.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن جاکلیدی پنگوئن به علاقه‌مندی‌ها"
+            aria-label="افزودن هودی بره ای عروسکی دورس تو کرکی گرم بالا به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/8">جاکلیدی پنگوئن</a></h3>
+              <h3 class="pc-t">
+                <a href="#">هودی بره ای عروسکی دورس تو کرکی گرم بالا</a>
+              </h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۴۲۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۳٬۲۰۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن جاکلیدی پنگوئن به سبد خرید"
+              aria-label="افزودن هودی بره ای عروسکی دورس تو کرکی گرم بالا به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1496,63 +1189,71 @@
       </div>
       <div class="feat-bar" aria-hidden="true"><i id="featThumb"></i></div>
     </section>
-    <!-- Happy Mail banner: whole banner is one link. Edit the texts; to use a real photo put it as an <img> before .hm-tx and hide .hm-art. -->
-    <section class="hm" aria-label="Happy Mail">
-      <a class="hm-card" href="/happy-mail">
+
+    <!-- Gift banner: whole banner is one link. Edit the texts; to use a real photo put it as an <img> before .hm-tx and hide .hm-art. -->
+    <section class="hm" aria-label="بسته هدیه مایا">
+      <a class="hm-card" href="#">
         <div class="hm-tx">
-          <h2>Happy Mail</h2>
-          <p>یک نامه پر از ذوق و هدیه‌های کوچک، با کارت دست‌نویس از طرف شما.</p>
+          <h2>بسته هدیه مایا</h2>
+          <p>
+            پیژامه، هودی یا ست دلخواهت را در جعبه‌ی هدیه بفرست، با کارت دست‌نویس
+            از طرف تو.
+          </p>
           <span class="hm-go"
-            >سفارش Happy Mail<svg class="ic" aria-hidden="true">
+            >سفارش بسته هدیه<svg class="ic" aria-hidden="true">
               <use href="#i-chev-l" /></svg
           ></span>
         </div>
         <div class="hm-art" aria-hidden="true">
-          <svg class="ic3 m"><use href="#i3-mail" /></svg
-          ><svg class="ic3 a"><use href="#i3-charm" /></svg
-          ><svg class="ic3 b"><use href="#i3-ring" /></svg
-          ><svg class="ic3 c"><use href="#i3-clip" /></svg>
+          <svg class="ic3 m"><use href="#i3-gift" /></svg
+          ><svg class="ic3 a"><use href="#i3-hood" /></svg
+          ><svg class="ic3 b"><use href="#i3-set" /></svg
+          ><svg class="ic3 c"><use href="#i3-pj" /></svg>
         </div>
       </a>
     </section>
+
     <!-- New arrivals: a grid (not a slider) so it differs from Featured. Items shown: 4 on phones, 6 on tablets, 5 (first = big 2x2) on laptops, 7 on 1600px+. -->
     <section class="new" aria-labelledby="newT">
       <div class="sec-h">
         <h2 id="newT">تازه‌ها</h2>
-        <a href="/new"
+        <a href="#"
           >مشاهده همه<svg class="ic" aria-hidden="true">
             <use href="#i-chev-l" /></svg
         ></a>
       </div>
       <div class="new-grid">
         <article class="pc" data-tone="1">
-          <a class="pc-i" href="/p/21" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-20.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><span class="pc-b">٪۲۵ تخفیف</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن چارم کیف خرگوش ابری به علاقه‌مندی‌ها"
+            aria-label="افزودن ست تیشرت شلوارک باکسی پینترستی فول بگ به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/21">چارم کیف خرگوش ابری</a></h3>
-              <p class="pc-o"><s>۷۲۰٬۰۰۰</s></p>
-              <p class="pc-p"><b>۵۴۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t">
+                <a href="#">ست تیشرت شلوارک باکسی پینترستی فول بگ</a>
+              </h3>
+              <p class="pc-o"><s>۱٬۴۰۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۱٬۰۵۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن چارم کیف خرگوش ابری به سبد خرید"
+              aria-label="افزودن ست تیشرت شلوارک باکسی پینترستی فول بگ به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1564,32 +1265,33 @@
           </div>
         </article>
         <article class="pc" data-tone="2">
-          <a class="pc-i" href="/p/22" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-19.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گردنبند ستاره دستساز به علاقه‌مندی‌ها"
+            aria-label="افزودن دورس پینترستی به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/22">گردنبند ستاره دستساز</a></h3>
+              <h3 class="pc-t"><a href="#">دورس پینترستی</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۹۸۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۹۶۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گردنبند ستاره دستساز به سبد خرید"
+              aria-label="افزودن دورس پینترستی به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1601,32 +1303,34 @@
           </div>
         </article>
         <article class="pc" data-tone="3">
-          <a class="pc-i" href="/p/23" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-18.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b">جدید</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن ست دستبند دوستی دوتایی به علاقه‌مندی‌ها"
+            aria-label="افزودن کاپشن پوست داخل استردار به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/23">ست دستبند دوستی دوتایی</a></h3>
+              <h3 class="pc-t"><a href="#">کاپشن پوست داخل استردار</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۷۶۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۹۲۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن ست دستبند دوستی دوتایی به سبد خرید"
+              aria-label="افزودن کاپشن پوست داخل استردار به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1638,33 +1342,35 @@
           </div>
         </article>
         <article class="pc" data-tone="4">
-          <a class="pc-i" href="/p/24" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-17.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
-          ><span class="pc-b">٪۱۰ تخفیف</span
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گوشواره گل رز به علاقه‌مندی‌ها"
+            aria-label="افزودن سویشرت پینترستی آستین پفکی کیتی به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/24">گوشواره گل رز</a></h3>
-              <p class="pc-o"><s>۵۰۰٬۰۰۰</s></p>
-              <p class="pc-p"><b>۴۵۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t">
+                <a href="#">سویشرت پینترستی آستین پفکی کیتی</a>
+              </h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۲٬۴۵۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گوشواره گل رز به سبد خرید"
+              aria-label="افزودن سویشرت پینترستی آستین پفکی کیتی به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1676,32 +1382,33 @@
           </div>
         </article>
         <article class="pc" data-tone="1">
-          <a class="pc-i" href="/p/25" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-16.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن گیره مو توت‌فرنگی به علاقه‌مندی‌ها"
+            aria-label="افزودن شلوار پینترستی فول بگ به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/25">گیره مو توت‌فرنگی</a></h3>
+              <h3 class="pc-t"><a href="#">شلوار پینترستی فول بگ</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۲۹۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۱٬۹۸۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن گیره مو توت‌فرنگی به سبد خرید"
+              aria-label="افزودن شلوار پینترستی فول بگ به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1713,32 +1420,34 @@
           </div>
         </article>
         <article class="pc" data-tone="2">
-          <a class="pc-i" href="/p/26" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-15.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b">٪۲۰ تخفیف</span
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن جاکلیدی کیتی ساتن به علاقه‌مندی‌ها"
+            aria-label="افزودن شلوار بالونی لی داخل کرکی به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/26">جاکلیدی کیتی ساتن</a></h3>
-              <p class="pc-o"></p>
-              <p class="pc-p"><b>۳۸۰٬۰۰۰</b><small>تومان</small></p>
+              <h3 class="pc-t"><a href="#">شلوار بالونی لی داخل کرکی</a></h3>
+              <p class="pc-o"><s>۸۵۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۶۸۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن جاکلیدی کیتی ساتن به سبد خرید"
+              aria-label="افزودن شلوار بالونی لی داخل کرکی به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1750,32 +1459,33 @@
           </div>
         </article>
         <article class="pc" data-tone="3">
-          <a class="pc-i" href="/p/27" tabindex="-1" aria-hidden="true"
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
             ><img
-              src="img/placeholder.svg"
+              src="assets/img/image-14.webp"
               alt=""
-              width="600"
+              width="800"
               height="800"
               loading="lazy"
-              decoding="async" /></a
+              decoding="async"
+              draggable="false" /></a
           ><button
             type="button"
             class="pc-h"
             aria-pressed="false"
-            aria-label="افزودن آویز موبایل ماهی به علاقه‌مندی‌ها"
+            aria-label="افزودن وست جین به علاقه‌مندی‌ها"
           >
             <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
           </button>
           <div class="pc-pn">
             <div class="pc-tx">
-              <h3 class="pc-t"><a href="/p/27">آویز موبایل ماهی</a></h3>
+              <h3 class="pc-t"><a href="#">وست جین</a></h3>
               <p class="pc-o"></p>
-              <p class="pc-p"><b>۵۲۰٬۰۰۰</b><small>تومان</small></p>
+              <p class="pc-p"><b>۷۹۰٬۰۰۰</b><small>تومان</small></p>
             </div>
             <button
               type="button"
               class="pc-add"
-              aria-label="افزودن آویز موبایل ماهی به سبد خرید"
+              aria-label="افزودن وست جین به سبد خرید"
               title="افزودن به سبد"
             >
               <svg class="ic ic-p" aria-hidden="true">
@@ -1788,7 +1498,820 @@
         </article>
       </div>
     </section>
-    <!-- next sections go here: Happy Mail banner, new arrivals, trust strip, reviews, blog, newsletter, footer -->
+
+    <!-- icons for trust strip, reviews, social and footer -->
+    <svg
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <path d="M3 6h11v10H3z" />
+        <path d="M14 10h4l3 3v3h-7" />
+        <circle cx="7" cy="18" r="1.8" />
+        <circle cx="17" cy="18" r="1.8" />
+      </symbol>
+      <symbol id="i-return" viewBox="0 0 24 24">
+        <path d="M4 8h11a5 5 0 0 1 0 10H8" />
+        <path d="M8 4 4 8l4 4" />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="M12 3 5 6v5.5c0 4.2 2.9 7.6 7 9.5 4.1-1.9 7-5.3 7-9.5V6z" />
+        <path d="m9 12 2.2 2.2L15 10.5" />
+      </symbol>
+      <symbol id="i-medal" viewBox="0 0 24 24">
+        <circle cx="12" cy="9" r="5.5" />
+        <path d="m9 14-1.5 7 4.5-2.5 4.5 2.5L15 14" />
+        <path d="m9.8 9 1.7 1.7 3-3" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path
+          d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"
+        />
+      </symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.2" cy="6.8" r=".6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+        />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m4 7 8 6 8-6" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" />
+        <path d="M12 7.5V12l3 2" />
+      </symbol>
+    </svg>
+
+    <!-- Trust strip -->
+    <section class="trust" aria-label="مزیت‌های خرید از مایا">
+      <ul class="trust-list">
+        <li class="trust-i">
+          <span class="trust-ic"
+            ><svg class="ic" aria-hidden="true"><use href="#i-truck" /></svg
+          ></span>
+          <div><b>ارسال سریع</b><span>تحویل ۲۴ تا ۷۲ ساعته</span></div>
+        </li>
+        <li class="trust-i">
+          <span class="trust-ic"
+            ><svg class="ic" aria-hidden="true"><use href="#i-return" /></svg
+          ></span>
+          <div><b>بازگشت کالا</b><span>تا ۷ روز ضمانت بازگشت</span></div>
+        </li>
+        <li class="trust-i">
+          <span class="trust-ic"
+            ><svg class="ic" aria-hidden="true"><use href="#i-shield" /></svg
+          ></span>
+          <div><b>پرداخت امن</b><span>درگاه معتبر بانکی</span></div>
+        </li>
+        <li class="trust-i">
+          <span class="trust-ic"
+            ><svg class="ic" aria-hidden="true"><use href="#i-medal" /></svg
+          ></span>
+          <div><b>ضمانت اصالت</b><span>کیفیت و دوخت تضمین‌شده</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Best sellers: same slider as Featured (shared JS, works for every .feat section). Photos: assets/img/best-1..6.webp -->
+    <section class="feat" aria-labelledby="bestT">
+      <div class="sec-h">
+        <h2 id="bestT">پرفروش‌ترین‌ها</h2>
+        <div class="feat-act">
+          <button type="button" class="feat-btn" aria-label="محصولات قبلی">
+            <svg class="ic" aria-hidden="true"><use href="#i-chev-r" /></svg>
+          </button>
+          <button type="button" class="feat-btn" aria-label="محصولات بعدی">
+            <svg class="ic" aria-hidden="true"><use href="#i-chev-l" /></svg>
+          </button>
+          <a href="#"
+            >مشاهده همه<svg class="ic" aria-hidden="true">
+              <use href="#i-chev-l" /></svg
+          ></a>
+        </div>
+      </div>
+      <div
+        class="feat-track"
+        tabindex="0"
+        role="group"
+        aria-roledescription="carousel"
+        aria-label="پرفروش‌ترین‌ها"
+      >
+        <article class="pc" data-tone="1">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-6.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن کت جین کیتی به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t"><a href="#">کت جین کیتی</a></h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۱٬۲۸۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن کت جین کیتی به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="pc" data-tone="2">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-5.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن هودی کراپ دورس سه نخ به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t"><a href="#"> هودی کراپ دورس سه نخ</a></h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۱٬۴۹۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن هودی کراپ دورس سه نخ به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="pc" data-tone="3">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-4.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن ست دو تیکه مناسب چهار فصل به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t"><a href="#"> ست دو تیکه مناسب چهار فصل</a></h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۷۹۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن ست دو تیکه مناسب چهار فصل به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="pc" data-tone="4">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-3.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن سویشرت قلبی دورس سه نخ داخل کرکی به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t">
+                <a href="#">سویشرت قلبی دورس سه نخ داخل کرکی</a>
+              </h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۱٬۷۵۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن سویشرت قلبی دورس سه نخ داخل کرکی به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="pc" data-tone="1">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-2.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b">٪۲۰ تخفیف</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن بافت پینترستی نرمالو به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t"><a href="#">بافت پینترستی نرمالو</a></h3>
+              <p class="pc-o"><s>۱٬۰۰۰٬۰۰۰</s></p>
+              <p class="pc-p"><b>۸۰۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن بافت پینترستی نرمالو به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="pc" data-tone="2">
+          <a class="pc-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/image-1.webp"
+              alt=""
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              draggable="false" /></a
+          ><span class="pc-b pc-b--gold">پرفروش</span
+          ><button
+            type="button"
+            class="pc-h"
+            aria-pressed="false"
+            aria-label="افزودن دورس و شلوار جاگری به علاقه‌مندی‌ها"
+          >
+            <svg class="ic" aria-hidden="true"><use href="#i-heart" /></svg>
+          </button>
+          <div class="pc-pn">
+            <div class="pc-tx">
+              <h3 class="pc-t"><a href="#">دورس و شلوار جاگری</a></h3>
+              <p class="pc-o"></p>
+              <p class="pc-p"><b>۲٬۹۰۰٬۰۰۰</b><small>تومان</small></p>
+            </div>
+            <button
+              type="button"
+              class="pc-add"
+              aria-label="افزودن دورس و شلوار جاگری به سبد خرید"
+              title="افزودن به سبد"
+            >
+              <svg class="ic ic-p" aria-hidden="true">
+                <use href="#i-plus" /></svg
+              ><svg class="ic ic-ok" aria-hidden="true">
+                <use href="#i-check" />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </div>
+      <div class="feat-bar" aria-hidden="true"><i></i></div>
+    </section>
+
+    <!-- Customer reviews: SAMPLE texts and numbers, replace with real ones. Phones/tablets: summary card + sideways scroll; laptops: summary column + 2x2 cards. -->
+    <section class="rv" aria-labelledby="rvT">
+      <div class="sec-h">
+        <h2 id="rvT">نظر مشتریان مایا</h2>
+        <a href="#"
+          >همه نظرات<svg class="ic" aria-hidden="true">
+            <use href="#i-chev-l" /></svg
+        ></a>
+      </div>
+      <div class="rv-wrap">
+        <div class="rv-sum">
+          <div class="rv-score">
+            <b>۴٫۸</b>
+            <div>
+              <span class="stars" role="img" aria-label="امتیاز 5 از ۵"
+                ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+                ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+                ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+                ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+                ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ></span>
+              <span class="rv-cnt">از ۵ امتیاز</span>
+              <span class="rv-cnt">بر اساس ۱٬۲۴۰ نظر</span>
+            </div>
+          </div>
+          <ul class="rv-bars" aria-label="توزیع امتیازها">
+            <li>
+              <span>۵</span><i><u style="--w: 86%"></u></i><em>۸۶٪</em>
+            </li>
+            <li>
+              <span>۴</span><i><u style="--w: 9%"></u></i><em>۹٪</em>
+            </li>
+            <li>
+              <span>۳</span><i><u style="--w: 3%"></u></i><em>۳٪</em>
+            </li>
+            <li>
+              <span>۲</span><i><u style="--w: 1%"></u></i><em>۱٪</em>
+            </li>
+            <li>
+              <span>۱</span><i><u style="--w: 1%"></u></i><em>۱٪</em>
+            </li>
+          </ul>
+          <p class="rv-note">
+            <svg class="ic" aria-hidden="true"><use href="#i-shield" /></svg>فقط
+            خریداران تأییدشده می‌توانند نظر ثبت کنند
+          </p>
+        </div>
+        <div
+          class="rv-list"
+          tabindex="0"
+          role="group"
+          aria-label="نظرات مشتریان"
+        >
+          <article class="rv-c">
+            <span class="stars" role="img" aria-label="امتیاز 5 از ۵"
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+            ></span>
+            <p class="rv-t">
+              هودی دقیقاً همان چیزی بود که تصور می‌کردم. پارچه نرم و گرم است و
+              بعد از چند بار شست‌وشو هم شکلش عوض نشد.
+            </p>
+            <p class="rv-p">هودی کلاه‌دار پشمی</p>
+            <div class="rv-f">
+              <span class="rv-av" aria-hidden="true">ن</span>
+              <div>
+                <p class="rv-n">نرگس</p>
+                <p class="rv-v">
+                  <svg class="ic" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >خریدار تأییدشده
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="rv-c">
+            <span class="stars" role="img" aria-label="امتیاز 5 از ۵"
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+            ></span>
+            <p class="rv-t">
+              بسته‌بندی هدیه خیلی شیک بود و کارت دست‌نویس حس خوبی به دوستم داد.
+              ارسال هم زودتر از موعد رسید.
+            </p>
+            <p class="rv-p">بسته هدیه مایا</p>
+            <div class="rv-f">
+              <span class="rv-av" aria-hidden="true">م</span>
+              <div>
+                <p class="rv-n">مهسا</p>
+                <p class="rv-v">
+                  <svg class="ic" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >خریدار تأییدشده
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="rv-c">
+            <span class="stars" role="img" aria-label="امتیاز 4 از ۵"
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic off" aria-hidden="true">
+                <use href="#i-star" /></svg
+            ></span>
+            <p class="rv-t">
+              سایز را طبق راهنما انتخاب کردم و کاملاً اندازه شد. رنگ در واقعیت
+              کمی روشن‌تر از عکس است ولی خیلی قشنگ است.
+            </p>
+            <p class="rv-p">شلوار کتان کرم</p>
+            <div class="rv-f">
+              <span class="rv-av" aria-hidden="true">س</span>
+              <div>
+                <p class="rv-n">سارا</p>
+                <p class="rv-v">
+                  <svg class="ic" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >خریدار تأییدشده
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="rv-c">
+            <span class="stars" role="img" aria-label="امتیاز 5 از ۵"
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+              ><svg class="ic" aria-hidden="true"><use href="#i-star" /></svg
+            ></span>
+            <p class="rv-t">
+              برای اولین بار خرید کردم و با پشتیبانی پیگیری سفارش خیلی راحت بود.
+              حتماً دوباره خرید می‌کنم.
+            </p>
+            <p class="rv-p">ست پیژامه ساتن</p>
+            <div class="rv-f">
+              <span class="rv-av" aria-hidden="true">ا</span>
+              <div>
+                <p class="rv-n">الهام</p>
+                <p class="rv-v">
+                  <svg class="ic" aria-hidden="true">
+                    <use href="#i-check" /></svg
+                  >خریدار تأییدشده
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog: 3 posts. Photos: assets/img/blog-1..3.webp (16:10) -->
+    <section class="blog" aria-labelledby="blogT">
+      <div class="sec-h">
+        <h2 id="blogT">وبلاگ مایا</h2>
+        <a href="#"
+          >همه مطالب<svg class="ic" aria-hidden="true">
+            <use href="#i-chev-l" /></svg
+        ></a>
+      </div>
+      <div class="blog-list" tabindex="0" role="group" aria-label="مطالب وبلاگ">
+        <article class="blog-c">
+          <a class="blog-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/blog-1.webp"
+              alt=""
+              width="800"
+              height="500"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <div class="blog-b">
+            <span class="blog-tag">راهنمای سایز</span>
+            <h3 class="blog-t">
+              <a href="#">چطور سایز مناسب لباس راحتی را انتخاب کنیم؟</a>
+            </h3>
+            <p class="blog-p">
+              با چند اندازه‌گیری ساده، بدون نیاز به پرو، سایز درست را پیدا کن.
+            </p>
+            <span class="blog-m">۴ دقیقه مطالعه</span>
+          </div>
+        </article>
+        <article class="blog-c">
+          <a class="blog-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/blog-2.webp"
+              alt=""
+              width="800"
+              height="500"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <div class="blog-b">
+            <span class="blog-tag">استایل زمستانی</span>
+            <h3 class="blog-t">
+              <a href="#">۵ ترکیب گرم و شیک با هودی و شلوار گشاد</a>
+            </h3>
+            <p class="blog-p">
+              از خانه تا خیابان، ترکیب‌هایی که هم راحت‌اند و هم مرتب.
+            </p>
+            <span class="blog-m">۳ دقیقه مطالعه</span>
+          </div>
+        </article>
+        <article class="blog-c">
+          <a class="blog-i" href="#" tabindex="-1" aria-hidden="true"
+            ><img
+              src="assets/img/blog-3.webp"
+              alt=""
+              width="800"
+              height="500"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <div class="blog-b">
+            <span class="blog-tag">مراقبت از لباس</span>
+            <h3 class="blog-t">
+              <a href="#">چطور لباس‌های پشمی و ساتن را درست بشوییم؟</a>
+            </h3>
+            <p class="blog-p">
+              چند نکته‌ی کوچک که عمر لباس‌هایت را چند برابر می‌کند.
+            </p>
+            <span class="blog-m">۵ دقیقه مطالعه</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Instagram feed: photos assets/img/ig-1..6.webp (square). Replace links with real post URLs. -->
+    <section class="ig" aria-labelledby="igT">
+      <div class="sec-h">
+        <h2 id="igT">مایا در اینستاگرام</h2>
+        <a href="#"
+          ><svg class="ic" aria-hidden="true"><use href="#i-ig" /></svg
+          ><span dir="ltr">@mayagallery</span></a
+        >
+      </div>
+      <div class="ig-grid">
+        <a class="ig-t" href="#" aria-label="مشاهده پست 1 در اینستاگرام"
+          ><img
+            src="assets/img/image-1.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+        <a class="ig-t" href="#" aria-label="مشاهده پست 2 در اینستاگرام"
+          ><img
+            src="assets/img/image-2.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+        <a class="ig-t" href="#" aria-label="مشاهده پست 3 در اینستاگرام"
+          ><img
+            src="assets/img/image-3.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+        <a class="ig-t" href="#" aria-label="مشاهده پست 4 در اینستاگرام"
+          ><img
+            src="assets/img/image-4.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+        <a class="ig-t" href="#" aria-label="مشاهده پست 5 در اینستاگرام"
+          ><img
+            src="assets/img/image-5.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+        <a class="ig-t" href="#" aria-label="مشاهده پست 6 در اینستاگرام"
+          ><img
+            src="assets/img/image-6.webp"
+            alt=""
+            width="600"
+            height="600"
+            loading="lazy"
+            decoding="async" /><svg class="ic" aria-hidden="true">
+            <use href="#i-heart" /></svg
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="ft">
+      <div class="ft-g">
+        <div class="ft-brand">
+          <a class="ft-logo" href="#" aria-label="مایا گالری - صفحه اصلی">
+            <span class="ft-mark"
+              ><svg aria-hidden="true"><use href="#i-bow" /></svg
+            ></span>
+            <span class="ft-lt">Maya<small>GALLERY</small></span>
+          </a>
+          <p class="ft-about">
+            مایا گالری، پوشاک راحت و شیک با دوخت دقیق. هدفمان این است که هر
+            خرید، تجربه‌ای آرام و مطمئن باشد.
+          </p>
+          <div class="ft-soc">
+            <a href="#" aria-label="اینستاگرام مایا"
+              ><svg class="ic" aria-hidden="true"><use href="#i-ig" /></svg
+            ></a>
+            <a href="#" aria-label="تماس تلفنی"
+              ><svg class="ic" aria-hidden="true"><use href="#i-phone" /></svg
+            ></a>
+            <a href="#" aria-label="ایمیل"
+              ><svg class="ic" aria-hidden="true"><use href="#i-mail" /></svg
+            ></a>
+          </div>
+        </div>
+        <nav aria-label="خرید">
+          <h3>خرید</h3>
+          <ul>
+            <li><a href="#">همه محصولات</a></li>
+            <li><a href="#">پیژامه</a></li>
+            <li><a href="#">هودی</a></li>
+            <li><a href="#">ست</a></li>
+            <li><a href="#">مانتو</a></li>
+            <li><a href="#">تخفیف‌ها</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="خدمات مشتریان">
+          <h3>خدمات مشتریان</h3>
+          <ul>
+            <li><a href="#">پیگیری سفارش</a></li>
+            <li><a href="#">راهنمای سایز</a></li>
+            <li><a href="#">ارسال و بازگشت</a></li>
+            <li><a href="#">سوالات متداول</a></li>
+            <li><a href="#">درباره مایا</a></li>
+          </ul>
+        </nav>
+        <div class="ft-ct">
+          <h3>تماس با ما</h3>
+          <ul>
+            <li>
+              <svg class="ic" aria-hidden="true"><use href="#i-pin" /></svg
+              ><span>تهران، خیابان نمونه، پلاک ۰</span>
+            </li>
+            <li>
+              <svg class="ic" aria-hidden="true"><use href="#i-phone" /></svg
+              ><a href="tel:+982100000000" dir="ltr">۰۲۱-۰۰۰۰۰۰۰۰</a>
+            </li>
+            <li>
+              <svg class="ic" aria-hidden="true"><use href="#i-mail" /></svg
+              ><a href="mailto:info@example.com" dir="ltr">info@example.com</a>
+            </li>
+            <li>
+              <svg class="ic" aria-hidden="true"><use href="#i-clock" /></svg
+              ><span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <p>© ۱۴۰۵ مایا گالری، تمامی حقوق محفوظ است.</p>
+        <p class="ft-by">طراحی و توسعه توسط محمد حسین امیرعابدین</p>
+      </div>
+    </footer>
+
+    <!-- Mobile bottom nav -->
+    <nav class="bnav" aria-label="منوی اصلی">
+      <a href="#" class="on" aria-current="page"
+        ><span class="ni"
+          ><svg class="ic"><use href="#n-home" /></svg></span
+        >خانه</a
+      >
+      <a href="#"
+        ><span class="ni"
+          ><svg class="ic"><use href="#n-shop" /></svg></span
+        >فروشگاه</a
+      >
+      <button id="catsBtn" aria-haspopup="dialog">
+        <span class="ni"
+          ><svg class="ic"><use href="#n-cats" /></svg></span
+        >دسته‌بندی
+      </button>
+      <a href="#"
+        ><span class="ni"
+          ><svg class="ic"><use href="#n-cart" /></svg
+          ><span class="badge js-cart" data-n="0"></span></span
+        >سبد خرید</a
+      >
+      <a href="#"
+        ><span class="ni"
+          ><svg class="ic"><use href="#n-user" /></svg></span
+        >حساب من</a
+      >
+    </nav>
+
+    <div class="scrim" id="scrim"></div>
+    <div
+      class="sheet"
+      id="sheet"
+      role="dialog"
+      aria-modal="true"
+      aria-label="دسته‌بندی‌ها"
+    >
+      <h2>دسته‌بندی محصولات</h2>
+      <a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-pj" /></svg></i
+        >پیژامه</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-pants" /></svg></i
+        >شلوار</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-hood" /></svg></i
+        >هودی</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-set" /></svg></i
+        >ست</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-manto" /></svg></i
+        >مانتو</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-blouse" /></svg></i
+        >شومیز</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-skirt" /></svg></i
+        >دامن</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-coat" /></svg></i
+        >پالتو</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-jeans" /></svg></i
+        >جین</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-gift" /></svg></i
+        >بسته هدیه</a
+      ><a href="#"
+        ><i
+          ><svg class="ic3"><use href="#i3-sale" /></svg></i
+        >تخفیف‌ها</a
+      >
+    </div>
 
     <script src="assets/js/script.js" defer></script>
   </body>
