@@ -14,14 +14,16 @@
 ======================================== */
 :root {
   --color-bg: #ffffff;
-  --color-bg-soft: #f7f7f7;
-  --color-bg-mute: #efefef;
-  --color-text-primary: #111111;
-  --color-text-secondary: #555555;
-  --color-text-mute: #999999;
-  --color-border: #e2e2e2;
-  --color-accent: #111111;
-  --color-accent-hover: #333333;
+  --color-bg-soft: #f5f3ff;
+  --color-bg-mute: #ebe7ff;
+  --color-text-primary: #171525;
+  --color-text-secondary: #5f5b70;
+  --color-text-mute: #8d899d;
+  --color-border: #e7e3f3;
+  --color-accent: #7657f6;
+  --color-accent-hover: #6041df;
+  --color-secondary: #18a889;
+  --color-ink: #171525;
 
   --font-base: "Peyda", system-ui, sans-serif;
 
@@ -2114,4 +2116,74 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+
+/* ========================================
+   REFINED PORTFOLIO UI
+   Palette: white / deep ink / violet + mint secondary
+======================================== */
+:root {
+  --shadow-soft: 0 8px 28px rgba(39, 27, 91, 0.06);
+  --shadow-md: 0 18px 48px rgba(39, 27, 91, 0.10);
+}
+::selection { background: #e8e1ff; color: #171525; }
+.header { border-bottom-color: rgba(118, 87, 246, 0.08); }
+.logo__mark { background: var(--color-accent); border-radius: 13px; }
+.logo:hover .logo__mark { background: var(--color-accent-hover); }
+.nav__link::after { background-color: var(--color-accent); }
+.btn-cta, .hero__btn--primary { background: var(--color-accent); box-shadow: 0 8px 20px rgba(118, 87, 246, .2); }
+.btn-cta:hover, .hero__btn--primary:hover { background: var(--color-accent-hover); }
+.hero__eyebrow { color: var(--color-secondary); }
+.eyebrow__dot { background-color: var(--color-secondary); }
+.highlight-text { color: var(--color-accent); }
+.section-eyebrow { color: var(--color-accent); }
+.eyebrow__line { background: var(--color-accent); }
+.service-card, .svc-card, .project-card {
+  border-color: var(--color-border);
+  border-radius: 22px;
+  box-shadow: 0 6px 24px rgba(39, 27, 91, .045);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.service-card:hover, .svc-card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(118, 87, 246, .35);
+  box-shadow: 0 18px 38px rgba(39, 27, 91, .10);
+}
+.service-card__icon { color: var(--color-accent); background: #f0ecff; border-radius: 15px; }
+.tech__pill { border-color: #e3ddff; background: #f8f6ff; color: #5140a7; }
+.project-card__img-wrap { overflow: hidden; background: #f3f0ff; }
+.project-card__img { transition: transform .5s ease; }
+.project-card:hover .project-card__img { transform: scale(1.035); }
+.project-card__tag { background: #f0ecff; color: #6041df; }
+.project-card__link { color: var(--color-accent); font-weight: 700; }
+.project-card__link:hover { color: var(--color-secondary); }
+.contact__form-wrap { border-color: #e7e3f3; }
+.form-input:focus { border-color: var(--color-accent); box-shadow: 0 0 0 4px rgba(118, 87, 246, .11); }
+.social-link:hover { background: var(--color-accent); border-color: var(--color-accent); }
+.hapino-preview {
+  min-height: 245px;
+  height: 100%;
+  padding: 22px 24px;
+  direction: rtl;
+  overflow: hidden;
+  position: relative;
+  color: #241a39;
+  background:
+    radial-gradient(circle at 15% 85%, rgba(255,255,255,.8) 0 7%, transparent 7.5%),
+    linear-gradient(135deg, #f5e9ff 0%, #f8f5ff 48%, #dff7ef 100%);
+}
+.hapino-preview__top { display:flex; align-items:center; justify-content:space-between; font-size: .85rem; }
+.hapino-preview__brand { font-weight: 900; font-size: 1.15rem; letter-spacing:-.04em; }
+.hapino-preview__menu { width:31px; height:31px; display:grid; place-items:center; background:rgba(255,255,255,.75); border-radius:10px; }
+.hapino-preview__copy { position:relative; z-index:1; margin-top:24px; display:flex; flex-direction:column; align-items:flex-start; gap:9px; }
+.hapino-preview__eyebrow { color:#7657f6; font-size:.72rem; font-weight:800; }
+.hapino-preview__copy strong { font-size:clamp(1.15rem, 2vw, 1.65rem); line-height:1.45; letter-spacing:-.04em; }
+.hapino-preview__button { margin-top:5px; padding:7px 13px; border-radius:9px; background:#7657f6; color:white; font-size:.7rem; font-weight:700; }
+.hapino-preview__products { position:absolute; left:18px; bottom:17px; display:flex; gap:8px; transform:rotate(-8deg); }
+.hapino-preview__products span { width:48px; height:60px; border:1px solid rgba(118,87,246,.12); border-radius:14px; display:grid; place-items:center; background:rgba(255,255,255,.8); color:#7657f6; font-size:1.25rem; box-shadow:0 8px 20px rgba(39,27,91,.08); }
+.project-card__img-wrap--hapino { display:block; text-decoration:none; }
+@media (max-width: 640px) {
+  .hapino-preview { min-height:220px; }
+  .service-card:hover, .svc-card:hover, .project-card:hover { transform: translateY(-2px); }
 }
